@@ -20,7 +20,7 @@ Plugin Name: Custom Avatars For Comments
 Author: Nicolas Kuttler
 Author URI: http://www.nkuttler.de/
 Description: Add the possibility to select a custom avatars for every comment
-Version: 0.1.0
+Version: 0.1.0.1
 */
 
 /**

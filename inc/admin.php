@@ -47,7 +47,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 		$this->plugin_file = dirname ( dirname ( __FILE__ ) ) . '/comment_avatars.php';
 
 		// Load localizations if available
-		load_plugin_textdomain ( 'custom-avatars-for-comments' , false , 'comment_avatars/translations' );
+		load_plugin_textdomain ( 'custom-avatars-for-comments' , false , 'custom_avatars_for_comments/translations' );
 
 		// Activation hook
 		register_activation_hook ( $this->plugin_file , array ( &$this , 'init' ) );
@@ -122,7 +122,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * @todo isn't there some admin enqueue style function?
 	 */
 	function css() { ?>
-		<link rel="stylesheet" href="<?php echo WP_PLUGIN_URL . '/comment_avatars/css/admin.css?v=0.2.2' ?>" type="text/css" media="all" /> <?php
+		<link rel="stylesheet" href="<?php echo WP_PLUGIN_URL . '/custom_avatars_for_comments/css/admin.css?v=0.2.2' ?>" type="text/css" media="all" /> <?php
 	}
 
 	/**

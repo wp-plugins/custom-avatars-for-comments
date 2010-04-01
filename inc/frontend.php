@@ -55,7 +55,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	 * @since 0.0.2
 	 */
 	function styles() {
-		wp_register_style( 'comment_avatars_style', WP_PLUGIN_URL . '/comment_avatars/css/comment_avatars.css' );
+		wp_register_style( 'comment_avatars_style', WP_PLUGIN_URL . '/custom_avatars_for_comments/css/comment_avatars.css' );
 		wp_enqueue_style( 'comment_avatars_style' );
 
 		$color = $this->get_option( 'bordercolor' );
@@ -77,7 +77,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	 * @since 0.0.2
 	 */
 	function scripts() {
-		wp_register_script( 'comment_avatars_js', WP_PLUGIN_URL . '/comment_avatars/js/comment_avatars.js' );
+		wp_register_script( 'comment_avatars_js', WP_PLUGIN_URL . '/custom_avatars_for_comments/js/comment_avatars.js' );
 		wp_enqueue_script( 'comment_avatars_js' );
 	}
 
