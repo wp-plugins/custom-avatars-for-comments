@@ -6,7 +6,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, i18n, internationalized, comment, comments, avatar, avatars, gravatar, gravatars
 Requires at least: 2.9
 Tested up to: 2.9
-Stable tag: 0.1.0.2
+Stable tag: 0.1.0.3
 
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
@@ -37,7 +37,7 @@ You have to modify your theme a little for this to work, see the Installation se
 Unzip, upload to your plugin directory and enable the plugin. You will need to do a little change to your theme to use this plugin. You need a very basic understanding of HTML and maybe CSS to do this. The steps are:
 
 1. Find the comments.php file in your theme directory and open it in an editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
-2. Add <?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?> to comments.php wherever you want the list of custom avatars to be displayed.
+2. Add &lt;?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend-&gt;select(); ?&gt; to comments.php wherever you want the list of custom avatars to be displayed.
 3. Upload your own custom avatars to the the wp-content/commentavatars/ directory and delete the default ones if you like to.
 
 = Support =
@@ -55,7 +55,8 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.1.0.2 ( 2010-04-01 ) =
+= 0.1.0.3 ( 2010-04-01 ) =
+ * Convert entities in readme.txt. Meh, this makes the readme.txt HTML in the most important section...
  * Fix CSS, JS paths.
 = 0.1.0 ( 2010-04-01 ) =
  * First public release
