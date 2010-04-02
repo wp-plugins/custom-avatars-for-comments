@@ -11,9 +11,11 @@ Stable tag: 0.1.0.3
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
 == Description ==
-This was initially written for a client and he agreed to open-source it (Thanks, John!). Your visitors will be able to choose from the avatars you upload to your website. Various configuration options are available.
+This was initially written for a client and he agreed to open-source it, thanks, John! Your visitors will be able to choose a different avatar for each and every comment they make.
 
-You have to modify your theme a little for this to work, see the Installation section.
+This means that you can easily allow quasi-anonymous posting, where only the admin of the blog can see the commenter's gravatar, URL etc.
+
+You have to modify your theme a little for this to work, and you need to upload your custom avatars. See the Installation section for details. Various configuration options are available.
 
 = My plugins =
 
@@ -44,7 +46,7 @@ Unzip, upload to your plugin directory and enable the plugin. You will need to d
 Visit the [plugin's home page](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) to leave comments, ask questions, etc. Please do NOT ask how to modify your theme. I offer paid support though, see my [contact page](http://www.nkuttler.de/contact/) if you're prepared to pay me something around $50.
 
 == Screenshots ==
-1. The modified comment form.
+1. The modified comment form. See the [live demo on my blog](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/).
 2. The options page.
 
 == Frequently Asked Questions ==
@@ -52,7 +54,7 @@ Q: Why can't I see the select box for the custom avatars on my website?<br />
 A: Please read the Installation section.
 
 Q: How do I remove the link to the plugin homepage?<br />
-A: Please read the plugin's settings page, you can disable it there.
+A: Please see the plugin's settings page, you can disable it there.
 
 == Changelog ==
 = 0.1.0.3 ( 2010-04-01 ) =
