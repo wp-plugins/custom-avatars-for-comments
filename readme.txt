@@ -58,7 +58,7 @@ A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
 = 0.1.2.0 ( 2010-04-03 ) =
- * Code cleanup, docs update.
+ * Code and interface cleanups, docs update.
  * Add random avatara selection.
 = 0.1.1.0 ( 2010-04-02 ) =
  * Additional CSS class for the custom avatar images.
