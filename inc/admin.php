@@ -161,7 +161,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 				</div> <?php
 			} else { ?>
 				<div> <?php
-					_e( 'You can upload additional avatars to <code>wp-content/commentavatars/</code> any time. Please don\'t delete existing ones, as that will lead to broken image links.', 'custom-avatars-for-comments' ); ?>
+					_e( 'You can upload additional avatars to <code>wp-content/commentavatars/</code> any time. Please don\'t delete existing ones, as that will lead to broken image links if they were already used.', 'custom-avatars-for-comments' ); ?>
 				</div> <?php
 			} ?>
 
@@ -220,7 +220,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Add this value as width and height attributes to the avatar &lt;img&gt; tags.", 'custom-avatars-for-comments' ) ?>
+							_e( "Add this value as width and height attributes to the avatar &lt;img&gt; tags (e.g. '44px').", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
 							<input type="text" name="commentavatars[size]" value="<?php echo $this->options['size']; ?>" />

@@ -56,7 +56,8 @@ A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
 = 0.1.1.0 ( 2010-04-02 ) =
- * Additional class for custom avatars. Useful if they have a different  size than your blog's gravatars.
+ * Additional CSS class for the custom avatar images.
+ * Update docs and german translation.
 = 0.1.0.3 ( 2010-04-01 ) =
  * Convert entities in readme.txt.
  * Fix CSS, JS paths.
