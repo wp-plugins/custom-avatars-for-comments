@@ -69,10 +69,11 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 */
 	function defaults () {
 		$defaults = array (
-				'version'			=>	'0.1.0',
+				'version'			=>	'0.1.2',
 				'usedefaultpng'		=>	'0',
 				'hidedefaultpng'	=>	'0',
 				'selectfirst'		=>	'0',
+				'selectrandom'		=>	'0',
 				'useplugincss'		=>	'1',
 				'showhomelink'		=>	'1',
 				'size'				=>	'',
@@ -176,6 +177,15 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						</th>
 						<td>
 							<input name="commentavatars[selectfirst]" type="checkbox" value="1" <?php checked( '1', $this->options['selectfirst'] ); ?> />
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row"> <?php
+							_e( "Automatically select a random avatar by default? This will effectively disable gravatars.", 'custom-avatars-for-comments' ) ?>
+						</th>
+						<td>
+							<input name="commentavatars[selectrandom]" type="checkbox" value="1" <?php checked( '1', $this->options['selectrandom'] ); ?> />
 						</td>
 					</tr>
 

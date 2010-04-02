@@ -92,12 +92,28 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	}
 
 	function select() {
-		$path = WP_CONTENT_DIR . '/commentavatars/';
-		$url = WP_CONTENT_URL . '/commentavatars';
-
-		$dir_handle = @opendir( $path );
+		$dir_handle = @opendir( $this->avatars_dir );
 		if ( !$dir_handle ) 
 			return;
+
+		$hidedefaultpng = $this->get_option( 'hidedefaultpng' );
+		while ( $file = readdir( $dir_handle) )
+			if( $file != '.' && $file != '..' )
+				if ( ( $hidedefaultpng === '1' && $file !== 'default.png' ) || $hidedefaultpng !== '1' )
+					$files[] = $file;
+
+		if ( !is_array( $files ) )
+			return;
+
+		sort( $files );
+
+		if ( $this->get_option( 'selectfirst' ) )
+			$selected = 0;
+
+		if ( $this->get_option( 'selectrandom' ) ) {
+			$count = count( $files );
+			$selected = mt_rand( 0, $count );
+		}
 
 		$counter = 0;
 
@@ -109,31 +125,24 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		} ?>
 
 		<div id="comment_avatar_select_wrapper"> <?php
-			$hidedefaultpng = $this->get_option( 'hidedefaultpng' );
-			while ( $file = readdir( $dir_handle) ) {
-				if( $file != '.' && $file != '..' ) {
-					if ( ( $hidedefaultpng == '1' && $file != 'default.png' ) || $hidedefaultpng == '0' ) {
-						echo '<input type="radio" name="comment_avatar" id="comment_avatar_select_' . $counter . '" value="' . $file . '"';
-						$selectfirst = $this->get_option( 'selectfirst' );
-						if ( $counter == 0 && $selectfirst == '1' )
-							echo ' checked="checked" ';
-						echo '/>';
-	
-						echo '<img src="' . $url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
-						if ( $counter == 0 && $selectfirst == '1' )
-							echo ' selected';
+			foreach ( $files as $file ) {
+				echo '<input type="radio" name="comment_avatar" id="comment_avatar_select_' . $counter . '" value="' . $file . '"';
+				if ( $counter == $selected )
+					echo ' checked="checked" ';
+				echo '/>';
 
-						echo '"'; 
-	
-						$size = $this->get_option( 'size' );
-						if ( !empty( $size ) )
-							echo ' width="' . $size .'" height="' . $size . '" ';
-						echo '/>';
-	
-						echo "\n";
-						$counter++;
-					}
-				}
+				echo '<img src="' . $this->avatars_url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
+				if ( $counter == $selected )
+					echo ' selected';
+
+				echo '"'; 
+				$size = $this->get_option( 'size' );
+				if ( !empty( $size ) )
+					echo ' width="' . $size .'" height="' . $size . '" ';
+				echo '/>';
+
+				echo "\n";
+				$counter++;
 			}
 			closedir( $dir_handle ); ?>
 		</div> <?php
