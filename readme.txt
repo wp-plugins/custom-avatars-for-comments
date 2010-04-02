@@ -6,16 +6,14 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, i18n, internationalized, comment, comments, avatar, avatars, gravatar, gravatars
 Requires at least: 2.9
 Tested up to: 2.9
-Stable tag: 0.1.0.3
+Stable tag: 0.1.1.0
 
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
 == Description ==
-This was initially written for a client and he agreed to open-source it, thanks, John! Your visitors will be able to choose a different avatar for each and every comment they make.
+This was initially written for a client and he agreed to open-source it (Thanks, John!). Your visitors will be able to choose from the avatars you upload to your website. Various configuration options are available.
 
-This means that you can easily allow quasi-anonymous posting, where only the admin of the blog can see the commenter's gravatar, URL etc.
-
-You have to modify your theme a little for this to work, and you need to upload your custom avatars. See the Installation section for details. Various configuration options are available.
+You have to modify your theme a little for this to work, see the Installation section.
 
 = My plugins =
 
@@ -39,14 +37,14 @@ You have to modify your theme a little for this to work, and you need to upload 
 Unzip, upload to your plugin directory and enable the plugin. You will need to do a little change to your theme to use this plugin. You need a very basic understanding of HTML and maybe CSS to do this. The steps are:
 
 1. Find the comments.php file in your theme directory and open it in an editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
-2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` to wherever you want the avatar select field to show up.
+2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>`
 3. Upload your own custom avatars to the the wp-content/commentavatars/ directory and delete the default ones if you like to.
 
 = Support =
 Visit the [plugin's home page](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) to leave comments, ask questions, etc. Please do NOT ask how to modify your theme. I offer paid support though, see my [contact page](http://www.nkuttler.de/contact/) if you're prepared to pay me something around $50.
 
 == Screenshots ==
-1. The modified comment form. See the [live demo on my blog](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/).
+1. The modified comment form.
 2. The options page.
 
 == Frequently Asked Questions ==
@@ -54,9 +52,11 @@ Q: Why can't I see the select box for the custom avatars on my website?<br />
 A: Please read the Installation section.
 
 Q: How do I remove the link to the plugin homepage?<br />
-A: Please see the plugin's settings page, you can disable it there.
+A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+= 0.1.1.0 ( 2010-04-02 ) =
+ * Additional class for custom avatars. Useful if they have a different  size than your blog's gravatars.
 = 0.1.0.3 ( 2010-04-01 ) =
  * Convert entities in readme.txt.
  * Fix CSS, JS paths.
