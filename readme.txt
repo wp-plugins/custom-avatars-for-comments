@@ -11,7 +11,7 @@ Stable tag: 0.1.1.0
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
 == Description ==
-This was initially written for a client and he agreed to open-source it (thanks, John!). Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
+This was initially written for a client and he agreed to open-source it, thanks, John!. Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
 
 You have to modify your theme a little for this to work, see the Installation section.
 
@@ -57,8 +57,9 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.1.2.0 =
- * Code cleanup.
+= 0.1.2.0 ( 2010- ) =
+ * Code cleanup, docs update.
+ * Add random avatara selection.
 = 0.1.1.0 ( 2010-04-02 ) =
  * Additional CSS class for the custom avatar images.
  * Update docs and german translation.
