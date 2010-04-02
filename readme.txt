@@ -37,7 +37,7 @@ You have to modify your theme a little for this to work, see the Installation se
 Unzip, upload to your plugin directory and enable the plugin. You will need to do a little change to your theme to use this plugin. You need a very basic understanding of HTML and maybe CSS to do this. The steps are:
 
 1. Find the comments.php file in your theme directory and open it in an editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
-2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>`
+2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` to wherever you want the avatar select field to show up.
 3. Upload your own custom avatars to the the wp-content/commentavatars/ directory and delete the default ones if you like to.
 
 = Support =
