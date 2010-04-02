@@ -15,7 +15,7 @@ This was initially written for a client and he agreed to open-source it (thanks,
 
 You have to modify your theme a little for this to work, see the Installation section.
 
-See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on my the plugin's home page.
+See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on the plugin's home page.
 
 = My plugins =
 
