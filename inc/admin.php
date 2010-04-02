@@ -159,6 +159,10 @@ class CommentAvatarsAdmin extends CommentAvatars {
 				<div class="error"> <?php
 					_e( 'No <code>wp-content/commentavatars/</code> directory exists. Please create it and upload some avatars.', 'custom-avatars-for-comments' ); ?>
 				</div> <?php
+			} else { ?>
+				<div> <?php
+					_e( 'You can upload additional avatars to <code>wp-content/commentavatars/</code> any time. Please don\'t delete existing ones, as that will lead to broken image links.', 'custom-avatars-for-comments' ); ?>
+				</div> <?php
 			} ?>
 
 			<p> <?php
