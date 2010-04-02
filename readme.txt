@@ -57,7 +57,7 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.1.2.0 ( 2010- ) =
+= 0.1.2.0 ( 2010-04-03 ) =
  * Code cleanup, docs update.
  * Add random avatara selection.
 = 0.1.1.0 ( 2010-04-02 ) =
