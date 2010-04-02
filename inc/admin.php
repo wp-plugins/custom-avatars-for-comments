@@ -182,7 +182,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Automatically select a random avatar by default? This will effectively disable gravatars.", 'custom-avatars-for-comments' ) ?>
+							_e( "Automatically select a random avatar by default? This will effectively disable gravatars. This won't work with caching plugins. If you need that feature please do contact me for professional support.", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
 							<input name="commentavatars[selectrandom]" type="checkbox" value="1" <?php checked( '1', $this->options['selectrandom'] ); ?> />
