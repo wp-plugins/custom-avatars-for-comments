@@ -41,6 +41,22 @@ class CommentAvatars {
 	var $options;
 
 	/**
+	 * String containing the path to the avatars directory
+	 *
+	 * @since 0.1.2.0
+	 * @var string
+	 */
+	var $avatars_dir;
+
+	/**
+	 * String containing the path to the avatars URL
+	 *
+	 * @since 0.1.2.0
+	 * @var string
+	 */
+	var $avatars_url;
+
+	/**
 	 * Load options
 	 *
 	 * @return none
@@ -48,6 +64,8 @@ class CommentAvatars {
 	 */
 	function __construct () {
 		$this->options = get_option ( 'commentavatars' );
+		$this->avatars_dir = WP_CONTENT_DIR . '/commentavatars/';
+		$this->avatars_url = WP_CONTENT_URL . '/commentavatars/';
 	} 
 
 	/**

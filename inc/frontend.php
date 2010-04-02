@@ -142,20 +142,19 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	function display( $avatar, $comment_ID ) {
 		$comment_avatar_array = get_comment_meta( $comment_ID, 'comment_avatar' ); 
 		$comment_avatar = $comment_avatar_array[0];
-		$url = WP_CONTENT_URL . '/commentavatars/';
 		$size = $this->get_option( 'size' );
 
 		if ( isset( $comment_avatar ) && !empty( $comment_avatar ) ) {
-			$file = WP_CONTENT_DIR . '/commentavatars/' . $comment_avatar;
+			$file = $this->avatars_dir . $comment_avatar;
 			if ( file_exists( $file ) )
-				$r = '<img alt="Custom avatar" src="' . $url . '/' . $comment_avatar . '" class="avatar custom-avatar-for-comment"';
+				$r = '<img alt="Custom avatar" src="' . $this->avatars_url . '/' . $comment_avatar . '" class="avatar custom-avatar-for-comment"';
 				if ( !empty( $size ) )
 					$r .= ' width="' . $size .'" height="' . $size . '" ';
 				$r .= '/>';
 				return $r;
 		}
 		elseif ( $this->get_option( 'usedefaultpng' ) == '1' ) {
-			$r = '<img alt="Default avatar" src="' . $url . '/default.png" class="avatar custom-avatar-for-comment"';
+			$r = '<img alt="Default avatar" src="' . $this->avatars_url . '/default.png" class="avatar custom-avatar-for-comment"';
 			if ( !empty( $size ) )
 				$r .= ' width="' . $size .'" height="' . $size . '" ';
 			$r .= '/>';
