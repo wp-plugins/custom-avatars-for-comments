@@ -15,6 +15,8 @@ This was initially written for a client and he agreed to open-source it (Thanks,
 
 You have to modify your theme a little for this to work, see the Installation section.
 
+See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on my the plugin's home page.
+
 = My plugins =
 
 [Better tag cloud](http://www.nkuttler.de/wordpress/nktagcloud/): I was pretty unhappy with the default WordPress tag cloud widget. This one is more powerful and offers a list HTML markup that is consistent with most other widgets.
@@ -44,7 +46,7 @@ Unzip, upload to your plugin directory and enable the plugin. You will need to d
 Visit the [plugin's home page](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) to leave comments, ask questions, etc. Please do NOT ask how to modify your theme. I offer paid support though, see my [contact page](http://www.nkuttler.de/contact/) if you're prepared to pay me something around $50.
 
 == Screenshots ==
-1. The modified comment form.
+1. The modified comment form. See the [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on my blog.
 2. The options page.
 
 == Frequently Asked Questions ==
