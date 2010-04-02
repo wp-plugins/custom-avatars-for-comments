@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
-"POT-Creation-Date: 2010-04-02 23:18+0200\n"
+"POT-Creation-Date: 2010-04-02 23:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,49 +53,64 @@ msgid "Label for the avatar select list"
 msgstr ""
 
 #: inc/admin.php:176
+msgid "Automatically select first custom avatar?"
+msgstr ""
+
+#: inc/admin.php:180
+msgid "This will effectively disable gravatars."
+msgstr ""
+
+#: inc/admin.php:186
+msgid "Automatically select a random avatar?"
+msgstr ""
+
+#: inc/admin.php:190
 msgid ""
-"Automatically select first custom avatar in the list by default? This will "
-"effectively disable gravatars."
+"This will effectively disable gravatars and won't work with caching plugins. "
+"If you need that feature please do contact me for professional support."
 msgstr ""
 
-#: inc/admin.php:185
+#: inc/admin.php:196
+msgid "Use a default.png if no custom avatar is selected?"
+msgstr ""
+
+#: inc/admin.php:200
 msgid ""
-"Automatically select a random avatar by default? This will effectively "
-"disable gravatars. This won't work with caching plugins. If you need that "
-"feature please do contact me for professional support."
+"You'll need to have a default.png file in the avatars directory. This will "
+"disable gravatars."
 msgstr ""
 
-#: inc/admin.php:194
-msgid ""
-"Use a default.png if no custom avatar is selected? You'll need to have a "
-"default.png file in the avatars directory. This will disable gravatars."
+#: inc/admin.php:206
+msgid "Hide default.png in the custom avatar select list?"
 msgstr ""
 
-#: inc/admin.php:203
-msgid "Hide the default.png in the custom avatar select list?"
-msgstr ""
-
-#: inc/admin.php:212
+#: inc/admin.php:215
 msgid "Use the default CSS styles that come with this plugin?"
 msgstr ""
 
-#: inc/admin.php:221
-msgid ""
-"Add this value as width and height attributes to the avatar &lt;img&gt; tags "
-"(e.g. '44px')."
+#: inc/admin.php:224
+msgid "Force custom avatars width and height:"
 msgstr ""
 
-#: inc/admin.php:230
+#: inc/admin.php:228
 msgid ""
-"Use this field to force a different color for the border of the selected "
-"avatar (e.g. '#ff0000')."
+"This field's value is added as width and height attributes to the avatar &lt;"
+"img&gt; tags, e.g. '44px'."
 msgstr ""
 
-#: inc/admin.php:239
+#: inc/admin.php:234
+msgid "Force Custom border color:"
+msgstr ""
+
+#: inc/admin.php:238
+msgid "(e.g. '#ff0000')."
+msgstr ""
+
+#: inc/admin.php:244
 msgid "Show the link to the plugin page in the footer?"
 msgstr ""
 
-#: inc/admin.php:249
+#: inc/admin.php:254
 msgid "Save Changes"
 msgstr ""
 

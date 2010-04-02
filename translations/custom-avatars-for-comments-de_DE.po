@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Avatars For Comments 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
-"POT-Creation-Date: 2010-04-02 23:18+0200\n"
+"POT-Creation-Date: 2010-04-02 23:32+0200\n"
 "PO-Revision-Date: 2010-04-01 01:11+0200\n"
 "Last-Translator: Nicolas Kuttler <wp@nicolaskuttler.de>\n"
 "Language-Team: German\n"
@@ -64,62 +64,77 @@ msgid "Label for the avatar select list"
 msgstr "Etikett für die Avatar-Auswahlliste"
 
 #: inc/admin.php:176
-msgid ""
-"Automatically select first custom avatar in the list by default? This will "
-"effectively disable gravatars."
+msgid "Automatically select first custom avatar?"
 msgstr ""
-"Automatisch den ersten Avatar aus der Liste auswählen? Dies wird gravatare "
-"deaktivieren."
+"Automatisch den ersten Avatar auswählen?"
 
-#: inc/admin.php:185
-msgid ""
-"Automatically select a random avatar by default? This will effectively "
-"disable gravatars. This won't work with caching plugins. If you need that "
-"feature please do contact me for professional support."
+#: inc/admin.php:180
+msgid "This will effectively disable gravatars."
 msgstr ""
-"Automatisch einen zufälligen Avatar aus der Liste auswählen? Dies wird "
+"Dies wird gravatare deaktivieren."
+
+#: inc/admin.php:186
+msgid "Automatically select a random avatar?"
+msgstr ""
+"Automatisch einen zufälligen Avatar aus der Liste auswählen?"
+
+#: inc/admin.php:190
+msgid ""
+"This will effectively disable gravatars and won't work with caching plugins. "
+"If you need that feature please do contact me for professional support."
+msgstr ""
+"Dies wird "
 "gravatare deaktivieren. Dies wird nicht mit cache-Plugins funktionieren. "
 "Falls Sie dieses Feature benötigen kontaktieren Sie mich bitte für "
 "professionellen support."
 
-#: inc/admin.php:194
-msgid ""
-"Use a default.png if no custom avatar is selected? You'll need to have a "
-"default.png file in the avatars directory. This will disable gravatars."
+#: inc/admin.php:196
+msgid "Use a default.png if no custom avatar is selected?"
 msgstr ""
 "Soll die Datei default.png benutzt werden, wenn kein individueller Avatar "
-"ausgewählt wurde? Sie müssen eine Datei namens default.php in das avatar-"
+"ausgewählt wurde?" 
+
+#: inc/admin.php:200
+msgid ""
+"You'll need to have a default.png file in the avatars directory. This will "
+"disable gravatars."
+msgstr ""
+"Sie müssen eine Datei namens default.php in das avatar-"
 "Verzeichnis hochladen. Damit werden gravatare deaktiviert."
 
-#: inc/admin.php:203
-msgid "Hide the default.png in the custom avatar select list?"
+#: inc/admin.php:206
+msgid "Hide default.png in the custom avatar select list?"
 msgstr "Soll default.png in der Avatar-Auswahlliste versteckt werden?"
 
-#: inc/admin.php:212
+#: inc/admin.php:215
 msgid "Use the default CSS styles that come with this plugin?"
 msgstr "Sollen die Standard-CSS Stile dieses pugins benutzt werden?"
 
-#: inc/admin.php:221
+#: inc/admin.php:224
+msgid "Force custom avatars width and height:"
+msgstr "Breite und Höhe der Avatare erzwingen:"
+
+#: inc/admin.php:228
 msgid ""
-"Add this value as width and height attributes to the avatar &lt;img&gt; tags "
-"(e.g. '44px')."
+"This field's value is added as width and height attributes to the avatar &lt;"
+"img&gt; tags, e.g. '44px'."
 msgstr ""
 "Dieser Wert wird als width- und height-Attribute den avatar &lt;img&gt;-tags "
-"hinzugefügt (z.B. '44px')."
+"hinzugefügt, z.B. '44px'."
 
-#: inc/admin.php:230
-msgid ""
-"Use this field to force a different color for the border of the selected "
-"avatar (e.g. '#ff0000')."
-msgstr ""
-"Benutzen Sie dieses Feld, um eine andere Farbe für den Rahmen des "
-"ausgewählten Avatars zu erzwingen (z.B. '#ff0000')."
+#: inc/admin.php:234
+msgid "Force Custom border color:"
+msgstr "Rahmenfarbe erzwingen:"
 
-#: inc/admin.php:239
+#: inc/admin.php:238
+msgid "(e.g. '#ff0000')."
+msgstr "(z.B. '#ff0000')."
+
+#: inc/admin.php:244
 msgid "Show the link to the plugin page in the footer?"
 msgstr "Soll der Verweis zu der plugin-Seite im Fuß angezeigt werden?"
 
-#: inc/admin.php:249
+#: inc/admin.php:254
 msgid "Save Changes"
 msgstr ""
 
@@ -168,6 +183,20 @@ msgstr "Meine anderen plugins"
 #: inc/nkuttler.php:56
 msgid "<a href=\"http://www.nkuttler.de\">Translated by Nicolas</a>"
 msgstr "<a href=\"http://www.nicolaskuttler.de\">Übersetzt von Nicolas</a>"
+
+#~ msgid ""
+#~ "Automatically select first custom avatar in the list by default? This "
+#~ "will effectively disable gravatars."
+#~ msgstr ""
+#~ "Automatisch den ersten Avatar aus der Liste auswählen? Dies wird "
+#~ "gravatare deaktivieren."
+
+#~ msgid ""
+#~ "Use this field to force a different color for the border of the selected "
+#~ "avatar (e.g. '#ff0000')."
+#~ msgstr ""
+#~ "Benutzen Sie dieses Feld, um eine andere Farbe für den Rahmen des "
+#~ "ausgewählten Avatars zu erzwingen (z.B. '#ff0000')."
 
 #~ msgid ""
 #~ "With this plugin your visitors can select from a list of custom avatars "
