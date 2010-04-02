@@ -151,7 +151,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 			nkuttler0_2_2_links( 'custom-avatars-for-comments' ) ?>
 
 			<p> <?php
-				_e( 'With this plugin your visitors can select from a list of custom avatars when they leave a comment.', 'custom-avatars-for-comments' ); ?>
+				_e( 'With this plugin your visitors can select from a list of custom avatars when they leave a comment. This plugin does <strong>not</strong> work out of the box, you <strong>need</strong> to modify your theme and upload avatars first. Please see the included readme.txt for instructions.', 'custom-avatars-for-comments' ); ?>
 			</p>
 
 			<?php
@@ -160,14 +160,10 @@ class CommentAvatarsAdmin extends CommentAvatars {
 					_e( 'No <code>wp-content/commentavatars/</code> directory exists. Please create it and upload some avatars.', 'custom-avatars-for-comments' ); ?>
 				</div> <?php
 			} else { ?>
-				<div> <?php
+				<p> <?php
 					_e( 'You can upload additional avatars to <code>wp-content/commentavatars/</code> any time. Please don\'t delete existing ones, as that will lead to broken image links if they were already used.', 'custom-avatars-for-comments' ); ?>
-				</div> <?php
+				</p> <?php
 			} ?>
-
-			<p> <?php
-				_e( 'This plugin does <strong>not</strong> work out of the box, you <strong>need</strong> to modify your theme and upload avatars first. Please see the included readme.txt for instructions.', 'custom-avatars-for-comments' ); ?>
-			</p>
 
         	<form method="post" action="options.php"> <?php
 				settings_fields( 'commentavatars_options' ); ?>
@@ -178,7 +174,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 							_e( "Label for the avatar select list", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input type="text" name="commentavatars[selectlabel]" value="<?php echo $this->options['selectlabel']; ?>" size="80" />
+							<input type="text" name="commentavatars[selectlabel]" value="<?php echo $this->options['selectlabel']; ?>" size="50" />
 						</td>
 					</tr>
 
@@ -229,7 +225,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Use this field to force a different color for the border of the selected avatar.", 'custom-avatars-for-comments' ) ?>
+							_e( "Use this field to force a different color for the border of the selected avatar (e.g. '#ff0000').", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
 							<input type="text" name="commentavatars[bordercolor]" value="<?php echo $this->options['bordercolor']; ?>" />
