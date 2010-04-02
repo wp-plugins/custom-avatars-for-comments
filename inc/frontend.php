@@ -119,9 +119,11 @@ class CommentAvatarsFrontend extends CommentAvatars {
 							echo ' checked="checked" ';
 						echo '/>';
 	
-						echo '<img src="' . $url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)"';
+						echo '<img src="' . $url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatars-for-comments ';
 						if ( $counter == 0 && $selectfirst == '1' )
-							echo ' class="selected" ';
+							echo ' selected';
+
+						echo '"'; 
 	
 						$size = $this->get_option( 'size' );
 						if ( !empty( $size ) )
@@ -146,14 +148,14 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		if ( isset( $comment_avatar ) && !empty( $comment_avatar ) ) {
 			$file = WP_CONTENT_DIR . '/commentavatars/' . $comment_avatar;
 			if ( file_exists( $file ) )
-				$r = '<img alt="Custom avatar" src="' . $url . '/' . $comment_avatar . '" class="avatar"';
+				$r = '<img alt="Custom avatar" src="' . $url . '/' . $comment_avatar . '" class="avatar custom-avatars-for-comments"';
 				if ( !empty( $size ) )
 					$r .= ' width="' . $size .'" height="' . $size . '" ';
 				$r .= '/>';
 				return $r;
 		}
 		elseif ( $this->get_option( 'usedefaultpng' ) == '1' ) {
-			$r = '<img alt="Default avatar" src="' . $url . '/default.png" class="avatar"';
+			$r = '<img alt="Default avatar" src="' . $url . '/default.png" class="avatar custom-avatars-for-comments"';
 			if ( !empty( $size ) )
 				$r .= ' width="' . $size .'" height="' . $size . '" ';
 			$r .= '/>';
