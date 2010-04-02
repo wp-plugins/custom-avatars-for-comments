@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
-"POT-Creation-Date: 2010-04-02 13:43+0200\n"
+"POT-Creation-Date: 2010-04-02 23:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,19 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: inc/admin.php:88
+#: inc/admin.php:81
 msgid "Pick an avatar:"
 msgstr ""
 
-#: inc/admin.php:112
+#: inc/admin.php:105
 msgid "Comment Avatars"
 msgstr ""
 
-#: inc/admin.php:149
+#: inc/admin.php:142
 msgid "Custom Avatars For Comments"
 msgstr ""
 
-#: inc/admin.php:154
+#: inc/admin.php:147
 msgid ""
 "With this plugin your visitors can select from a list of custom avatars when "
 "they leave a comment. This plugin does <strong>not</strong> work out of the "
@@ -35,60 +35,67 @@ msgid ""
 "first. Please see the included readme.txt for instructions."
 msgstr ""
 
-#: inc/admin.php:160
+#: inc/admin.php:153
 msgid ""
 "No <code>wp-content/commentavatars/</code> directory exists. Please create "
 "it and upload some avatars."
 msgstr ""
 
-#: inc/admin.php:164
+#: inc/admin.php:157
 msgid ""
 "You can upload additional avatars to <code>wp-content/commentavatars/</code> "
 "any time. Please don't delete existing ones, as that will lead to broken "
 "image links if they were already used."
 msgstr ""
 
-#: inc/admin.php:174
+#: inc/admin.php:167
 msgid "Label for the avatar select list"
 msgstr ""
 
-#: inc/admin.php:183
+#: inc/admin.php:176
 msgid ""
 "Automatically select first custom avatar in the list by default? This will "
 "effectively disable gravatars."
 msgstr ""
 
-#: inc/admin.php:192
+#: inc/admin.php:185
+msgid ""
+"Automatically select a random avatar by default? This will effectively "
+"disable gravatars. This won't work with caching plugins. If you need that "
+"feature please do contact me for professional support."
+msgstr ""
+
+#: inc/admin.php:194
 msgid ""
 "Use a default.png if no custom avatar is selected? You'll need to have a "
 "default.png file in the avatars directory. This will disable gravatars."
 msgstr ""
 
-#: inc/admin.php:201
+#: inc/admin.php:203
 msgid "Hide the default.png in the custom avatar select list?"
 msgstr ""
 
-#: inc/admin.php:210
+#: inc/admin.php:212
 msgid "Use the default CSS styles that come with this plugin?"
 msgstr ""
 
-#: inc/admin.php:219
+#: inc/admin.php:221
 msgid ""
 "Add this value as width and height attributes to the avatar &lt;img&gt; tags "
 "(e.g. '44px')."
 msgstr ""
 
-#: inc/admin.php:228
+#: inc/admin.php:230
 msgid ""
 "Use this field to force a different color for the border of the selected "
 "avatar (e.g. '#ff0000')."
 msgstr ""
 
-#: inc/admin.php:237
+#: inc/admin.php:239
 msgid "Show the link to the plugin page in the footer?"
 msgstr ""
 
-#: inc/admin.php:247
+#: inc/admin.php:249
 msgid "Save Changes"
 msgstr ""
 
