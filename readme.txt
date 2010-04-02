@@ -38,7 +38,7 @@ Unzip, upload to your plugin directory and enable the plugin. You will need to d
 
 1. Find the comments.php file in your theme directory and open it in an editor. Alternatively edit it through the WordPress theme editor under Appearance-Editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
 2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` where the avatar select list should appear.
-3. Upload your own custom avatars to the the wp-content/commentavatars/ directory and delete the default ones if you like to.
+3. Upload your own custom avatars to the the wp-content/commentavatars/ directory.
 
 = Support =
 Visit the [plugin's home page](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) to leave comments, ask questions, etc. Please do NOT ask how to modify your theme. I offer paid support though, see my [contact page](http://www.nkuttler.de/contact/) if you're prepared to pay me something around $50.
