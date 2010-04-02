@@ -7,13 +7,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Custom Avatars For Comments 0.1.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/comment_avatars\n"
-"POT-Creation-Date: 2010-04-01 02:54+0200\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
+"POT-Creation-Date: 2010-04-02 13:43+0200\n"
 "PO-Revision-Date: 2010-04-01 01:11+0200\n"
 "Last-Translator: Nicolas Kuttler <wp@nicolaskuttler.de>\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -25,8 +25,6 @@ msgstr "Wähle einen Avatar aus:"
 msgid "Comment Avatars"
 msgstr "Kommentar-Avatare"
 
-#. #-#-#-#-#  comment_avatars.pot (Custom Avatars For Comments 0.1.0)  #-#-#-#-#
-#. Plugin Name of an extension
 #: inc/admin.php:149
 msgid "Custom Avatars For Comments"
 msgstr "Individuelle Avatare für Kommentare"
@@ -34,10 +32,15 @@ msgstr "Individuelle Avatare für Kommentare"
 #: inc/admin.php:154
 msgid ""
 "With this plugin your visitors can select from a list of custom avatars when "
-"they leave a comment."
+"they leave a comment. This plugin does <strong>not</strong> work out of the "
+"box, you <strong>need</strong> to modify your theme and upload avatars "
+"first. Please see the included readme.txt for instructions."
 msgstr ""
 "Mit diesem plugin können Ihre Besucher aus einer List von Avataren einen "
 "auswählen, wenn sie einen Kommentar hinterlassen."
+"Dieses plugin funktioniert <strong>nicht</strong> ohne zusätzliche Arbeiten. "
+"Das Theme <strong>muss</strong> zuerst modifiziert werden. Bitte schauen Sie "
+"in die readme.txt Datei."
 
 #: inc/admin.php:160
 msgid ""
@@ -47,15 +50,15 @@ msgstr ""
 "Kein <code>wp-content/commentavatars/</code> Verzeichnis existiert. Bitte "
 "legen Sie es an und laden Sie Avatare hoch."
 
-#: inc/admin.php:165
+#: inc/admin.php:164
 msgid ""
-"This plugin does <strong>not</strong> work out of the box, you <strong>need</"
-"strong> to modify your theme and upload avatars first. Please see the "
-"included readme.txt for instructions."
+"You can upload additional avatars to <code>wp-content/commentavatars/</code> "
+"any time. Please don't delete existing ones, as that will lead to broken "
+"image links if they were already used."
 msgstr ""
-"Dieses plugin funktioniert <strong>nicht</strong> ohne zusätzliche "
-"Arbeiten. Das Theme <strong>muss</strong> zuerst modifiziert werden. Bitte "
-"schauen Sie in die readme.txt Datei."
+"Sie können jederzeit zusätzlich avatare nach <code>wp-content/commentavatars/"
+"</code> hochladen. Bitte löschen Sie nicht bereits vorhandene Bilder, da "
+"dies zu Anzeigefehlern führen kann wenn sie schon benutzt wurden."
 
 #: inc/admin.php:174
 msgid "Label for the avatar select list"
@@ -88,22 +91,27 @@ msgstr "Sollen die Standard-CSS Stile dieses pugins benutzt werden?"
 
 #: inc/admin.php:219
 msgid ""
-"Add this value as width and height attributes to the avatar &lt;img&gt; tags."
+"Add this value as width and height attributes to the avatar &lt;img&gt; tags "
+"(e.g. '44px')."
 msgstr ""
 "Dieser Wert wird als width- und height-Attribute den avatar &lt;img&gt;-tags "
-"hinzugefügt."
+"hinzugefügt (z.B. '44px')."
 
 #: inc/admin.php:228
 msgid ""
 "Use this field to force a different color for the border of the selected "
-"avatar."
+"avatar (e.g. '#ff0000')."
 msgstr ""
 "Benutzen Sie dieses Feld, um eine andere Farbe für den Rahmen des "
-"ausgewählten Avatars zu erzwingen."
+"ausgewählten Avatars zu erzwingen (z.B. '#ff0000')."
 
 #: inc/admin.php:237
 msgid "Show the link to the plugin page in the footer?"
 msgstr "Soll der Verweis zu der plugin-Seite im Fuß angezeigt werden?"
+
+#: inc/admin.php:247
+msgid "Save Changes"
+msgstr ""
 
 #: inc/nkuttler.php:25
 msgid "Do you like this plugin?"
@@ -151,8 +159,14 @@ msgstr "Meine anderen plugins"
 msgid "<a href=\"http://www.nkuttler.de\">Translated by Nicolas</a>"
 msgstr "<a href=\"http://www.nicolaskuttler.de\">Übersetzt von Nicolas</a>"
 
-#. Description of an extension
-msgid "Add the possibility to select a custom avatars for every comment"
-msgstr ""
-"Ermöglicht es, zu jedem einzelenen Kommentar einen individuelle Avatar "
-"auszuwählen."
+#~ msgid ""
+#~ "With this plugin your visitors can select from a list of custom avatars "
+#~ "when they leave a comment."
+#~ msgstr ""
+#~ "Mit diesem plugin können Ihre Besucher aus einer List von Avataren einen "
+#~ "auswählen, wenn sie einen Kommentar hinterlassen."
+
+#~ msgid "Add the possibility to select a custom avatars for every comment"
+#~ msgstr ""
+#~ "Ermöglicht es, zu jedem einzelenen Kommentar einen individuelle Avatar "
+#~ "auszuwählen."

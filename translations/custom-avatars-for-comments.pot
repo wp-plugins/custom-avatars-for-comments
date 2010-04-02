@@ -1,14 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Nicolas Kuttler
-# This file is distributed under the same license as the PACKAGE package.
+# This file is put in the public domain.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Avatars For Comments 0.1.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/comment_avatars\n"
-"POT-Creation-Date: 2010-04-01 02:54+0200\n"
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
+"POT-Creation-Date: 2010-04-02 13:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,8 +23,6 @@ msgstr ""
 msgid "Comment Avatars"
 msgstr ""
 
-#. #-#-#-#-#  comment_avatars.pot (Custom Avatars For Comments 0.1.0)  #-#-#-#-#
-#. Plugin Name of an extension
 #: inc/admin.php:149
 msgid "Custom Avatars For Comments"
 msgstr ""
@@ -33,7 +30,9 @@ msgstr ""
 #: inc/admin.php:154
 msgid ""
 "With this plugin your visitors can select from a list of custom avatars when "
-"they leave a comment."
+"they leave a comment. This plugin does <strong>not</strong> work out of the "
+"box, you <strong>need</strong> to modify your theme and upload avatars "
+"first. Please see the included readme.txt for instructions."
 msgstr ""
 
 #: inc/admin.php:160
@@ -42,11 +41,11 @@ msgid ""
 "it and upload some avatars."
 msgstr ""
 
-#: inc/admin.php:165
+#: inc/admin.php:164
 msgid ""
-"This plugin does <strong>not</strong> work out of the box, you <strong>need</"
-"strong> to modify your theme and upload avatars first. Please see the "
-"included readme.txt for instructions."
+"You can upload additional avatars to <code>wp-content/commentavatars/</code> "
+"any time. Please don't delete existing ones, as that will lead to broken "
+"image links if they were already used."
 msgstr ""
 
 #: inc/admin.php:174
@@ -75,17 +74,22 @@ msgstr ""
 
 #: inc/admin.php:219
 msgid ""
-"Add this value as width and height attributes to the avatar &lt;img&gt; tags."
+"Add this value as width and height attributes to the avatar &lt;img&gt; tags "
+"(e.g. '44px')."
 msgstr ""
 
 #: inc/admin.php:228
 msgid ""
 "Use this field to force a different color for the border of the selected "
-"avatar."
+"avatar (e.g. '#ff0000')."
 msgstr ""
 
 #: inc/admin.php:237
 msgid "Show the link to the plugin page in the footer?"
+msgstr ""
+
+#: inc/admin.php:247
+msgid "Save Changes"
 msgstr ""
 
 #: inc/nkuttler.php:25
@@ -132,8 +136,4 @@ msgstr ""
 
 #: inc/nkuttler.php:56
 msgid "<a href=\"http://www.nkuttler.de\">Translated by Nicolas</a>"
-msgstr ""
-
-#. Description of an extension
-msgid "Add the possibility to select a custom avatars for every comment"
 msgstr ""
