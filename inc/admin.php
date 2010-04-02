@@ -17,14 +17,6 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	var $plugin_file;
 
 	/**
-	 * The options page
-	 *
-	 * @since 0.0.2
-	 * @var string
-	 */
-	var $options_page;
-	
-	/**
 	 * PHP 4 Style constructor which calls the below PHP5 Style Constructor
 	 *
 	 * @since 0.0.2
@@ -109,8 +101,8 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 */
 	function add_page () {
 		if ( current_user_can ( 'manage_options' ) && function_exists ( 'add_options_page' ) ) {
-			$this->options_page = add_options_page ( __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , 'manage_options' , 'commentavatars' , array ( &$this , 'admin_page' ) );
-			add_action( 'admin_head-' . $this->options_page, array( &$this, 'css' ) );
+			$options_page = add_options_page ( __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , 'manage_options' , 'commentavatars' , array ( &$this , 'admin_page' ) );
+			add_action( 'admin_head-' . $options_page, array( &$this, 'css' ) );
 			add_filter( 'ozh_adminmenu_icon_commentavatars', array ( &$this , 'commentavatars_icon' ));
 		}
 	}
