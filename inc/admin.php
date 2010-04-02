@@ -173,34 +173,37 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Automatically select first custom avatar in the list by default? This will effectively disable gravatars.", 'custom-avatars-for-comments' ) ?>
+							_e( "Automatically select first custom avatar?", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input name="commentavatars[selectfirst]" type="checkbox" value="1" <?php checked( '1', $this->options['selectfirst'] ); ?> />
+							<input name="commentavatars[selectfirst]" type="checkbox" value="1" <?php checked( '1', $this->options['selectfirst'] ); ?> /> <?php
+							_e( "This will effectively disable gravatars.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Automatically select a random avatar by default? This will effectively disable gravatars. This won't work with caching plugins. If you need that feature please do contact me for professional support.", 'custom-avatars-for-comments' ) ?>
+							_e( "Automatically select a random avatar?", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input name="commentavatars[selectrandom]" type="checkbox" value="1" <?php checked( '1', $this->options['selectrandom'] ); ?> />
+							<input name="commentavatars[selectrandom]" type="checkbox" value="1" <?php checked( '1', $this->options['selectrandom'] ); ?> /> <?php
+							_e( "This will effectively disable gravatars and won't work with caching plugins. If you need that feature please do contact me for professional support.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Use a default.png if no custom avatar is selected? You'll need to have a default.png file in the avatars directory. This will disable gravatars.", 'custom-avatars-for-comments' ) ?>
+							_e( "Use a default.png if no custom avatar is selected?", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input name="commentavatars[usedefaultpng]" type="checkbox" value="1" <?php checked( '1', $this->options['usedefaultpng'] ); ?> />
+							<input name="commentavatars[usedefaultpng]" type="checkbox" value="1" <?php checked( '1', $this->options['usedefaultpng'] ); ?> /> <?php
+							_e( "You'll need to have a default.png file in the avatars directory. This will disable gravatars.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Hide the default.png in the custom avatar select list?", 'custom-avatars-for-comments' ) ?>
+							_e( "Hide default.png in the custom avatar select list?", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
 							<input name="commentavatars[hidedefaultpng]" type="checkbox" value="1" <?php checked( '1', $this->options['hidedefaultpng'] ); ?> />
@@ -218,19 +221,21 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Add this value as width and height attributes to the avatar &lt;img&gt; tags (e.g. '44px').", 'custom-avatars-for-comments' ) ?>
+							_e( "Force custom avatars width and height:", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input type="text" name="commentavatars[size]" value="<?php echo $this->options['size']; ?>" />
+							<input type="text" name="commentavatars[size]" value="<?php echo $this->options['size']; ?>" /> <?php
+							_e( "This field's value is added as width and height attributes to the avatar &lt;img&gt; tags, e.g. '44px'.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
 					<tr valign="top">
 						<th scope="row"> <?php
-							_e( "Use this field to force a different color for the border of the selected avatar (e.g. '#ff0000').", 'custom-avatars-for-comments' ) ?>
+							_e( "Force Custom border color:", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
-							<input type="text" name="commentavatars[bordercolor]" value="<?php echo $this->options['bordercolor']; ?>" />
+							<input type="text" name="commentavatars[bordercolor]" value="<?php echo $this->options['bordercolor']; ?>" /> <?php
+							_e( "(e.g. '#ff0000').", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
