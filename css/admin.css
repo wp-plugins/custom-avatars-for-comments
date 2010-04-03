@@ -46,6 +46,7 @@ blockquote {
 
 #clearnone {
 	clear:					none;
+	width:					auto;
 }
 
 .nkthemeswitch-admin {
