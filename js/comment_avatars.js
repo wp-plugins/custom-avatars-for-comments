@@ -1,6 +1,6 @@
 function comment_avatars_js( counter, e ) {
 
-	var children = document.getElementById('comment_avatar_select_wrapper').getElementsByTagName("img");
+	var children = document.getElementById('comment-avatars-select-wrapper').getElementsByTagName("img");
 
 	//alert ( children.length );
 
