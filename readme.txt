@@ -60,6 +60,7 @@ A: Please read the plugin's settings page, you can disable it there.
 = 0.1.2.3 ( 2010-04-03 ) =
  * The last release broken the frontend CSS, sorry about that, and sorry for releasing so many updates in one day, the plugin is still very young.
  * Admin CSS fix for webkit.
+ * I hope nobody uses multiple comment forms on one page.
 = 0.1.2.2 ( 2010-04-03 ) =
  * Rename CSS classes and remove IDs to make more sense and avoid invalid markup.
 = 0.1.2.1 ( 2010-04-03 ) =
