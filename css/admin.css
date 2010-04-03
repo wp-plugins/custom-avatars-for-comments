@@ -44,7 +44,7 @@ blockquote {
 	text-align:				center;
 }
 
-#clearnone {
+.form-table-clearnone {
 	clear:					none;
 	width:					auto;
 }

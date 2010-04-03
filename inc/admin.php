@@ -160,7 +160,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
         	<form method="post" action="options.php"> <?php
 				settings_fields( 'commentavatars_options' ); ?>
-				<table class="form-table" id="clearnone" >
+				<table class="form-table form-table-clearnone" >
 
 					<tr valign="top">
 						<th scope="row"> <?php
