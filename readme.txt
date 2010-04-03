@@ -6,12 +6,12 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 2.9
-Stable tag: 0.1.2.2
+Stable tag: 0.1.2.3
 
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
 == Description ==
-This was initially written for a client and he agreed to open-source it, thanks, John!. Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
+This was initially written for a client and he agreed to open-source it. Thanks, John! Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
 
 You have to modify your theme a little for this to work, see the Installation section.
 
@@ -57,6 +57,9 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+= 0.1.2.3 ( 2010-04-03 ) =
+ * The last release broken the frontend CSS, sorry about that, and sorry for releasing so many updates in one day, the plugin is still very young.
+ * Admin CSS fix for webkit.
 = 0.1.2.2 ( 2010-04-03 ) =
  * Rename CSS classes and remove IDs to make more sense and avoid invalid markup.
 = 0.1.2.1 ( 2010-04-03 ) =

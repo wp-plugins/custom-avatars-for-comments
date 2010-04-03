@@ -1,14 +1,14 @@
-#comment_avatar_select_wrapper {
+.comment-avatars-select-wrapper {
 	padding:									4px;
 }
-#comment_avatar_select_wrapper input {
+.comment-avatars-select-wrapper input {
 	display:									none;
 }
-#comment_avatar_select_wrapper img.selected {
+.comment-avatars-select-wrapper img.selected {
 	border:										4px solid #abf;
 	margin:										0;
 }
-#comment_avatar_select_wrapper img,
-#comment_avatar_select_wrapper img.nothing {
+.comment-avatars-select-wrapper img,
+.comment-avatars-select-wrapper img.nothing {
 	margin:										4px;
 }
