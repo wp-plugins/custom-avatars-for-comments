@@ -6,7 +6,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 2.9
-Stable tag: 0.1.2.1
+Stable tag: 0.1.2.2
 
 Allows custom avatars for every comment. You have to edit your theme for this to work.
 
@@ -57,6 +57,8 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+= 0.1.2.2 ( 2010-04-03 ) =
+ * Rename CSS classes and remove IDs to make more sense and avoid invalid markup.
 = 0.1.2.1 ( 2010-04-03 ) =
  * Bugfix in the random selection code.
 = 0.1.2.0 ( 2010-04-03 ) =

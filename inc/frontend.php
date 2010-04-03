@@ -119,14 +119,14 @@ class CommentAvatarsFrontend extends CommentAvatars {
 
 		$label = $this->get_option ( 'selectlabel' );
 		if ( !empty( $label ) ) { ?>
-			<div class="comment_avatar_label">
+			<div class="comment_avatar_label comment-avatars-select-label">
 				<label for="comment_avatar"><?php echo $label ?></label>
 			</div> <?php
 		} ?>
 
-		<div id="comment_avatar_select_wrapper"> <?php
+		<div class="comment-avatars-select-wrapper" > <?php
 			foreach ( $files as $file ) {
-				echo '<input type="radio" name="comment_avatar" id="comment_avatar_select_' . $counter . '" value="' . $file . '"';
+				echo '<input type="radio" name="comment_avatar" class="comment-avatars-select-' . $counter . '" value="' . $file . '"';
 				if ( $counter === $selected )
 					echo ' checked="checked" ';
 				echo '/>';
