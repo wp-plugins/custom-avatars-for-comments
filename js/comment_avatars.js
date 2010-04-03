@@ -10,5 +10,5 @@ function comment_avatars_js( counter, e ) {
 	
 	e.className='selected';
 	
-	document.getElementById('comment_avatar_select_' + counter ).checked='true';
+	document.getElementById('comment-avatars-select-' + counter ).checked='true';
 }
