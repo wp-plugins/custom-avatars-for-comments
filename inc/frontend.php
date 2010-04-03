@@ -126,7 +126,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 
 		<div id="comment-avatars-select-wrapper" > <?php
 			foreach ( $files as $file ) {
-				echo '<input type="radio" name="comment_avatar" class="comment-avatars-select-' . $counter . '" value="' . $file . '"';
+				echo '<input type="radio" name="comment_avatar" id="comment-avatars-select-' . $counter . '" value="' . $file . '"';
 				if ( $counter === $selected )
 					echo ' checked="checked" ';
 				echo '/>';
