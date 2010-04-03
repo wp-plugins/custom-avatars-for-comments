@@ -127,12 +127,12 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		<div id="comment_avatar_select_wrapper"> <?php
 			foreach ( $files as $file ) {
 				echo '<input type="radio" name="comment_avatar" id="comment_avatar_select_' . $counter . '" value="' . $file . '"';
-				if ( $counter == $selected )
+				if ( $counter === $selected )
 					echo ' checked="checked" ';
 				echo '/>';
 
 				echo '<img src="' . $this->avatars_url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
-				if ( $counter == $selected )
+				if ( $counter === $selected )
 					echo ' selected';
 
 				echo '"'; 
