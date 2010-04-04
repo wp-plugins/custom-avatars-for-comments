@@ -5,7 +5,7 @@ Plugin URI: http://www.nkuttler.de/wordpress/custom-avatars-for-comments/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=11041772
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
-Tested up to: 2.9
+Tested up to: 3.0
 Stable tag: 0.2.0.0
 
 Allows custom avatars for every comment.
