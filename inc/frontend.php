@@ -151,8 +151,10 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		$deselectlink = $this->get_option ( 'deselectlink' );
 		if ( !empty( $deselectlink ) ) { ?>
 			<div class="comment-avatars-deselect-link">
-				<input type="radio" name="comment_avatar" value="0" onclick="comment_avatars_js_deselect_all();" /> <?php
+				<input type="radio" name="comment_avatar" value="0" onclick="comment_avatars_js_deselect_all();" />
+				<span> <?php
 					echo $deselectlink ?>
+				</span>
 			</div> <?php
 		}
 	}
