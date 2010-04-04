@@ -145,14 +145,15 @@ class CommentAvatarsFrontend extends CommentAvatars {
 					echo ' width="' . $size .'" height="' . $size . '" ';
 				echo "/>\n";
 				$counter++;
-			}
-			$deselectlink = $this->get_option ( 'deselectlink' );
-			if ( !empty( $deselectlink ) ) { ?>
-				<div class="comment-avatars-deselect-link">
-					<a href="#" onclick="comment_avatars_js_deselect_all(); return false"><?php echo $deselectlink ?></a>
-				</div> <?php
 			} ?>
 		</div> <?php
+
+		$deselectlink = $this->get_option ( 'deselectlink' );
+		if ( !empty( $deselectlink ) ) { ?>
+			<div class="comment-avatars-deselect-link">
+				<a href="#" onclick="comment_avatars_js_deselect_all(); return false"><?php echo $deselectlink ?></a>
+			</div> <?php
+		}
 	}
 
 	function display( $avatar, $comment_ID ) {
