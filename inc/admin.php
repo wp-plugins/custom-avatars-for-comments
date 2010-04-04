@@ -8,6 +8,15 @@
  */
 class CommentAvatarsAdmin extends CommentAvatars {
 
+	
+	/**
+	 * Version of the options format
+	 *
+	 * @since 0.2.0.0
+	 * @var string
+	 */
+	var $version = '0.2.0.0';
+
 	/**
 	 * Path to the main plugin file
 	 *
@@ -30,10 +39,12 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * Setup backend functionality in WordPress
 	 *
 	 * @return none
-	 * @since 3.0.0.0
+	 * @since 0.0.2
 	 */
 	function __construct () {
 		CommentAvatars::__construct ();
+
+		$this->check_upgrade();
 
 		// Full path to main file
 		$this->plugin_file = dirname ( dirname ( __FILE__ ) ) . '/comment_avatars.php';
@@ -69,7 +80,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 */
 	function defaults () {
 		$defaults = array (
-				'version'			=>	'0.1.2',
+				'version'			=>	'0.2.0.0',
 				'usedefaultpng'		=>	'0',
 				'hidedefaultpng'	=>	'0',
 				'selectfirst'		=>	'0',
@@ -91,10 +102,41 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * @return none
 	 * @since 0.0.2
 	 */
-	function init () {
+	function init() {
 		if ( ! get_option ( 'commentavatars' ) )
 			add_option ( 'commentavatars' , $this->defaults () );
+		else
+			$this->check_upgrade();
 	}
+
+	/**
+	 * Check if we need to perform an upgrade
+	 *
+	 * @return none
+	 * @since 0.2.0.0
+	 */
+	 function check_upgrade() {
+		if ( version_compare ( $this->get_option( 'version' ), $this->version, '<' ) )
+			$this->upgrade();
+	 }
+
+	/**
+	 * Perform an upgrade
+	 *
+	 * @return none
+	 * @since 0.2.0.0
+	 */
+	 function upgrade() {
+	 	if ( version_compare( $this->get_option( 'version' ), '0.2.0.0' ) == -1 ) {
+			// If the plugin was already in use we assume the user added the
+			// select field by hand and hide it.
+			$newopts = $this->defaults();
+			$this->options = array_merge( $this->options , $newopts );
+			$this->options['removeselect'] = '1';
+			#var_dump( $this->options );
+			update_option( 'commentavatars', $this->options );
+		}
+	 }
 
 	/**
 	 * Add the options page
@@ -102,7 +144,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * @return none
 	 * @since 0.0.2
 	 */
-	function add_page () {
+	function add_page() {
 		if ( current_user_can ( 'manage_options' ) && function_exists ( 'add_options_page' ) ) {
 			$options_page = add_options_page ( __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , __( 'Comment Avatars' , 'custom-avatars-for-comments' ) , 'manage_options' , 'commentavatars' , array ( &$this , 'admin_page' ) );
 			add_action( 'admin_head-' . $options_page, array( &$this, 'css' ) );
@@ -162,6 +204,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
         	<form method="post" action="options.php"> <?php
 				settings_fields( 'commentavatars_options' ); ?>
+				<input type="hidden" name="commentavatars[version]" value="<?php echo $this->get_option( 'version' ) ?>" />
 				<table class="form-table form-table-clearnone" >
 
 					<tr valign="top">
@@ -261,7 +304,6 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						</td>
 					</tr>
 
-				</table>
 					<tr valign="top">
 						<th scope="row"> <?php
 							_e( "Show the link to the plugin page in the footer?", 'custom-avatars-for-comments' )?>

@@ -75,7 +75,7 @@ class CommentAvatars {
 	 * @return mixed 
 	 * @since 0.0.2
 	 */
-	function get_option ( $option ) {
+	function get_option( $option ) {
 		if ( isset ( $this->options[$option] ) )
 			return $this->options[$option];
 		else
