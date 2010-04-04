@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Avatars For Comments 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
-"POT-Creation-Date: 2010-04-02 23:32+0200\n"
+"POT-Creation-Date: 2010-04-04 01:32+0200\n"
 "PO-Revision-Date: 2010-04-01 01:11+0200\n"
 "Last-Translator: Nicolas Kuttler <wp@nicolaskuttler.de>\n"
 "Language-Team: German\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: inc/admin.php:81
+#: inc/admin.php:82
 msgid "Pick an avatar:"
 msgstr "Wähle einen Avatar aus:"
 
-#: inc/admin.php:105
+#: inc/admin.php:106
 msgid "Comment Avatars"
 msgstr "Kommentar-Avatare"
 
-#: inc/admin.php:142
+#: inc/admin.php:143
 msgid "Custom Avatars For Comments"
 msgstr "Individuelle Avatare für Kommentare"
 
-#: inc/admin.php:147
+#: inc/admin.php:148
 msgid ""
 "With this plugin your visitors can select from a list of custom avatars when "
 "they leave a comment. This plugin does <strong>not</strong> work out of the "
@@ -41,7 +41,7 @@ msgstr ""
 "<strong>nicht</strong> ohne zusätzliche Arbeiten. Das Theme <strong>muss</"
 "strong> zuerst modifiziert werden. Bitte schauen Sie in die readme.txt Datei."
 
-#: inc/admin.php:153
+#: inc/admin.php:154
 msgid ""
 "No <code>wp-content/commentavatars/</code> directory exists. Please create "
 "it and upload some avatars."
@@ -49,7 +49,7 @@ msgstr ""
 "Kein <code>wp-content/commentavatars/</code> Verzeichnis existiert. Bitte "
 "legen Sie es an und laden Sie Avatare hoch."
 
-#: inc/admin.php:157
+#: inc/admin.php:158
 msgid ""
 "You can upload additional avatars to <code>wp-content/commentavatars/</code> "
 "any time. Please don't delete existing ones, as that will lead to broken "
@@ -59,62 +59,70 @@ msgstr ""
 "</code> hochladen. Bitte löschen Sie nicht bereits vorhandene Bilder, da "
 "dies zu Anzeigefehlern führen kann wenn sie schon benutzt wurden."
 
-#: inc/admin.php:167
+#: inc/admin.php:168
 msgid "Label for the avatar select list"
 msgstr "Etikett für die Avatar-Auswahlliste"
 
-#: inc/admin.php:176
+#: inc/admin.php:177
 msgid "Automatically select first custom avatar?"
-msgstr ""
-"Automatisch den ersten Avatar auswählen?"
+msgstr "Automatisch den ersten Avatar auswählen?"
 
-#: inc/admin.php:180
+#: inc/admin.php:181
 msgid "This will effectively disable gravatars."
-msgstr ""
-"Dies wird gravatare deaktivieren."
+msgstr "Dies wird gravatare deaktivieren."
 
-#: inc/admin.php:186
+#: inc/admin.php:187
 msgid "Automatically select a random avatar?"
-msgstr ""
-"Automatisch einen zufälligen Avatar aus der Liste auswählen?"
+msgstr "Automatisch einen zufälligen Avatar aus der Liste auswählen?"
 
-#: inc/admin.php:190
+#: inc/admin.php:191
 msgid ""
 "This will effectively disable gravatars and won't work with caching plugins. "
 "If you need that feature please do contact me for professional support."
 msgstr ""
-"Dies wird "
-"gravatare deaktivieren. Dies wird nicht mit cache-Plugins funktionieren. "
-"Falls Sie dieses Feature benötigen kontaktieren Sie mich bitte für "
-"professionellen support."
+"Dies wird gravatare deaktivieren. Dies wird nicht mit cache-Plugins "
+"funktionieren. Falls Sie dieses Feature benötigen kontaktieren Sie mich "
+"bitte für professionellen support."
 
-#: inc/admin.php:196
+#: inc/admin.php:197
+msgid "Select no avatar link text:"
+msgstr "Keinen Avatar auswählen Verweistext:"
+
+#: inc/admin.php:201
+msgid ""
+"Useful if you have automatic avatar selection enabled or if visitors change "
+"their mind."
+msgstr ""
+"Nützlich wenn man automatisches Auswählen eines Avatars aktiviert hat, oder "
+"wenn ein Besucher es sich anders überlegt."
+
+#: inc/admin.php:207
 msgid "Use a default.png if no custom avatar is selected?"
 msgstr ""
 "Soll die Datei default.png benutzt werden, wenn kein individueller Avatar "
-"ausgewählt wurde?" 
+"ausgewählt wurde?"
 
-#: inc/admin.php:200
+#: inc/admin.php:211
 msgid ""
 "You'll need to have a default.png file in the avatars directory. This will "
 "disable gravatars."
 msgstr ""
-"Sie müssen eine Datei namens default.php in das avatar-"
-"Verzeichnis hochladen. Damit werden gravatare deaktiviert."
+"Sie müssen eine Datei namens default.php in das avatar-Verzeichnis "
+"hochladen. Damit werden gravatare deaktiviert."
 
-#: inc/admin.php:206
+#: inc/admin.php:217
 msgid "Hide default.png in the custom avatar select list?"
 msgstr "Soll default.png in der Avatar-Auswahlliste versteckt werden?"
 
-#: inc/admin.php:215
+#: inc/admin.php:226
 msgid "Use the default CSS styles that come with this plugin?"
 msgstr "Sollen die Standard-CSS Stile dieses pugins benutzt werden?"
 
-#: inc/admin.php:224
+#: inc/admin.php:235
 msgid "Force custom avatars width and height:"
 msgstr "Breite und Höhe der Avatare erzwingen:"
 
-#: inc/admin.php:228
+#: inc/admin.php:239
 msgid ""
 "This field's value is added as width and height attributes to the avatar &lt;"
 "img&gt; tags, e.g. '44px'."
@@ -122,19 +130,19 @@ msgstr ""
 "Dieser Wert wird als width- und height-Attribute den avatar &lt;img&gt;-tags "
 "hinzugefügt, z.B. '44px'."
 
-#: inc/admin.php:234
+#: inc/admin.php:245
 msgid "Force Custom border color:"
 msgstr "Rahmenfarbe erzwingen:"
 
-#: inc/admin.php:238
+#: inc/admin.php:249
 msgid "(e.g. '#ff0000')."
 msgstr "(z.B. '#ff0000')."
 
-#: inc/admin.php:244
+#: inc/admin.php:255
 msgid "Show the link to the plugin page in the footer?"
 msgstr "Soll der Verweis zu der plugin-Seite im Fuß angezeigt werden?"
 
-#: inc/admin.php:254
+#: inc/admin.php:265
 msgid "Save Changes"
 msgstr ""
 
