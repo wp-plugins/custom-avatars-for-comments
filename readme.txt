@@ -60,7 +60,7 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.2.0.0 ( 2010-04-03 ) =
+= 0.2.0.0 ( 2010-04-04 ) =
  * The plugin should now work out of the box. If it does not, your theme is broken, please see the FAQ.
  * Add 'select no avatar' link
  * Fix forcing of border color
