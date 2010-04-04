@@ -78,6 +78,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 				'showhomelink'		=>	'1',
 				'size'				=>	'',
 				'bordercolor'		=>	'',
+				'deselectlink'		=>  '',
 				'selectlabel'		=>	__( 'Pick an avatar:', 'custom-avatars-for-comments' ),
 		);
 		return $defaults;
@@ -188,6 +189,16 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						<td>
 							<input name="commentavatars[selectrandom]" type="checkbox" value="1" <?php checked( '1', $this->options['selectrandom'] ); ?> /> <?php
 							_e( "This will effectively disable gravatars and won't work with caching plugins. If you need that feature please do contact me for professional support.", 'custom-avatars-for-comments' ) ?>
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row"> <?php
+							_e( "Select no avatar link text:", 'custom-avatars-for-comments' ) ?>
+						</th>
+						<td>
+							<input name="commentavatars[deselectlink]" type="text" value="<?php echo $this->options['deselectlink'] ?>" /> <?php
+							_e( "Useful if you have automatic avatar selection enabled or if visitors change their mind.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 

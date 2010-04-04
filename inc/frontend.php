@@ -102,18 +102,22 @@ class CommentAvatarsFrontend extends CommentAvatars {
 				if ( ( $hidedefaultpng === '1' && $file !== 'default.png' ) || $hidedefaultpng !== '1' )
 					$files[] = $file;
 
+		closedir( $dir_handle );
+
 		if ( !is_array( $files ) )
 			return;
 
 		sort( $files );
 
-		if ( $this->get_option( 'selectfirst' ) )
+		if ( $this->get_option( 'selectfirst' ) == '1' )
 			$selected = 0;
 
-		if ( $this->get_option( 'selectrandom' ) ) {
+		if ( $this->get_option( 'selectrandom' ) == '1' ) {
 			$count = count( $files );
 			$selected = mt_rand( 0, $count );
 		}
+
+		$size = $this->get_option( 'size' );
 
 		$counter = 0;
 
@@ -134,17 +138,18 @@ class CommentAvatarsFrontend extends CommentAvatars {
 				echo '<img src="' . $this->avatars_url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
 				if ( $counter === $selected )
 					echo ' selected';
-
 				echo '"'; 
-				$size = $this->get_option( 'size' );
 				if ( !empty( $size ) )
 					echo ' width="' . $size .'" height="' . $size . '" ';
-				echo '/>';
-
-				echo "\n";
+				echo "/>\n";
 				$counter++;
 			}
-			closedir( $dir_handle ); ?>
+			$deselectlink = $this->get_option ( 'deselectlink' );
+			if ( !empty( $deselectlink ) ) { ?>
+				<div class="comment-avatars-deselect-link">
+					<a href="#" onclick="comment_avatars_js_deselect_all(); return false"><?php echo $deselectlink ?></a>
+				</div> <?php
+			} ?>
 		</div> <?php
 	}
 
