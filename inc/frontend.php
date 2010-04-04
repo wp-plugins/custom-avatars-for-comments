@@ -62,7 +62,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		if ( !empty( $color ) ) { ?>
 			<style type="text/css">
 				<!--
-					#comment_avatar_select_wrapper img.selected {
+					#comment-avatars-select-wrapper img.selected {
 						border-color: <?php echo $color ?> !important;
 					}
 				-->
