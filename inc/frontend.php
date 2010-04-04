@@ -151,7 +151,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		$deselectlink = $this->get_option ( 'deselectlink' );
 		if ( !empty( $deselectlink ) ) { ?>
 			<div class="comment-avatars-deselect-link">
-				<input type="radio" name="comment_avatar" onclick="comment_avatars_js_deselect_all();" /> <?php
+				<input type="radio" name="comment_avatar" value="0" onclick="comment_avatars_js_deselect_all();" /> <?php
 					echo $deselectlink ?>
 			</div> <?php
 		}
@@ -164,12 +164,13 @@ class CommentAvatarsFrontend extends CommentAvatars {
 
 		if ( isset( $comment_avatar ) && !empty( $comment_avatar ) ) {
 			$file = $this->avatars_dir . $comment_avatar;
-			if ( file_exists( $file ) )
+			if ( file_exists( $file ) ) {
 				$r = '<img alt="Custom avatar" src="' . $this->avatars_url . '/' . $comment_avatar . '" class="avatar custom-avatar-for-comment"';
 				if ( !empty( $size ) )
 					$r .= ' width="' . $size .'" height="' . $size . '" ';
 				$r .= '/>';
 				return $r;
+			}
 		}
 		elseif ( $this->get_option( 'usedefaultpng' ) == '1' ) {
 			$r = '<img alt="Default avatar" src="' . $this->avatars_url . '/default.png" class="avatar custom-avatar-for-comment"';
