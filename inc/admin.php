@@ -76,6 +76,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 				'selectrandom'		=>	'0',
 				'useplugincss'		=>	'1',
 				'showhomelink'		=>	'1',
+				'removeselect'		=>	'0',
 				'size'				=>	'',
 				'bordercolor'		=>	'',
 				'deselectlink'		=>  '',
@@ -145,7 +146,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 			nkuttler0_2_2_links( 'custom-avatars-for-comments' ) ?>
 
 			<p> <?php
-				_e( 'With this plugin your visitors can select from a list of custom avatars when they leave a comment. This plugin does <strong>not</strong> work out of the box, you <strong>need</strong> to modify your theme and upload avatars first. Please see the included readme.txt for instructions.', 'custom-avatars-for-comments' ); ?>
+				_e( 'With this plugin your visitors can select from a list of custom avatars when they leave a comment.', 'custom-avatars-for-comments' ); ?>
 			</p>
 
 			<?php
@@ -250,6 +251,17 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						</td>
 					</tr>
 
+					<tr valign="top">
+						<th scope="row"> <?php
+							_e( "Don't show the select field automatically.", 'custom-avatars-for-comments' )?>
+						</th>
+						<td>
+							<input name="commentavatars[removeselect]" type="checkbox" value="1" <?php checked( '1', $this->options['removeselect'] ); ?> /> <?php
+							_e( "Use this option if you are placing the select field by hand in your theme.", 'custom-avatars-for-comments' ) ?>
+						</td>
+					</tr>
+
+				</table>
 					<tr valign="top">
 						<th scope="row"> <?php
 							_e( "Show the link to the plugin page in the footer?", 'custom-avatars-for-comments' )?>

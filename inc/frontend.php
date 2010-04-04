@@ -43,6 +43,8 @@ class CommentAvatarsFrontend extends CommentAvatars {
 			add_filter( 'get_avatar', array( &$this, 'filter' ), 10, 5 );
 			add_action( 'wp_head', array( &$this, 'styles' ), 7 );
 			add_action( 'wp_head', array( &$this, 'scripts' ), 8 );
+			if ( $this->get_option( 'removeselect' ) !== '1' )
+				add_action( 'comment_form', array( &$this, 'select' ), 1 );
 			if ( $this->get_option( 'showhomelink' ) == '1' )
 				add_action( 'wp_footer', array( &$this, 'homelink' ), 8 );
 		}

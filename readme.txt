@@ -6,14 +6,12 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 2.9
-Stable tag: 0.1.3.0
+Stable tag: 0.2.0.0
 
-Allows custom avatars for every comment. You have to edit your theme for this to work.
+Allows custom avatars for every comment.
 
 == Description ==
 This was initially written for a client and he agreed to open-source it. Thanks, John! Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
-
-You have to modify your theme a little for this to work, see the Installation section.
 
 See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on the plugin's home page.
 
@@ -36,20 +34,25 @@ See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/)
 [Rhyming widget](http://www.rhymebox.de/blog/rhymebox-widget/): I wrote a little online [rhyming dictionary](http://www.rhymebox.com/). This is a widget to search it directly from one of your sidebars.
 
 == Installation ==
-Unzip, upload to your plugin directory and enable the plugin. You will need to do a little change to your theme to use this plugin. You need a very basic understanding of HTML and maybe CSS to do this. The steps are:
-
-1. Find the comments.php file in your theme directory and open it in an editor. Alternatively edit it through the WordPress theme editor under Appearance-Editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
-2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` where the avatar select list should appear.
-3. Upload your own custom avatars to the the wp-content/commentavatars/ directory.
-
-= Support =
-Visit the [plugin's home page](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) to leave comments, ask questions, etc. Please do NOT ask how to modify your theme. I offer paid support though, see my [contact page](http://www.nkuttler.de/contact/) if you're prepared to pay me something around $50.
+1. Unzip
+2. Upload to your plugins directory
+3. Enable the plugin
+4. Upload your own custom avatars to the the wp-content/commentavatars/ directory
 
 == Screenshots ==
 1. The modified comment form. See the [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on my blog.
 2. The options page.
 
 == Frequently Asked Questions ==
+Q: I have uploaded avatars, there is no error message on the settings page, but I still can't see the avatar selection field<br />
+A: Your theme is most likely broken. Tell your theme developer to read the [Theme Development](http://codex.wordpress.org/Theme_Development) page and to add the comment_form action.
+
+Q: I don't like where the avatar selection field show up on the page.<br />
+A: Perform the following steps:
+1. Find the comments.php file in your theme directory and open it in an editor. Alternatively edit it through the WordPress theme editor under Appearance-Editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
+2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` where the avatar select list should appear.
+3. Check the "Don't show the select field automatically." box on the settings page.
+
 Q: Why can't I see the select box for the custom avatars on my website?<br />
 A: Please read the Installation section.
 
@@ -57,7 +60,8 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.1.3.0 ( 2010-04-03 ) =
+= 0.2.0.0 ( 2010-04-03 ) =
+ * The plugin should now work out of the box. If it does not, your theme is broken, please see the FAQ.
  * Add 'select no avatar' link
  * Fix forcing of border color
  * Various optimizations
