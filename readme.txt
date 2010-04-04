@@ -63,8 +63,8 @@ A: Please read the plugin's settings page, you can disable it there.
 == Changelog ==
 
 = 0.2.0.0 ( 2010-04-04 ) =
- * The plugin should now work without theme modifications on fresh installs. If it does not, your theme is broken, please see the FAQ. If you were already using an earlier release of this plugin the automatic display of the select box will be deactivated. You can change that setting on the options page.
- * Add a 'select no avatar' link
+ * The plugin should now work without theme modifications when installed. If it does not, your theme is broken, please see the FAQ. If you were already using an earlier release of this plugin, the automatic display of the select box will be deactivated. You can change that setting on the options page.
+ * Add the option to display a 'select no avatar' button
  * Fix forcing of border color
  * Various code optimizations
 = 0.1.2.4 ( 2010-04-03 ) =
