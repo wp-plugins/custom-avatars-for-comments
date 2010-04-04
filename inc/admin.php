@@ -127,13 +127,12 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * @since 0.2.0.0
 	 */
 	 function upgrade() {
-	 	if ( version_compare( $this->get_option( 'version' ), '0.2.0.0' ) == -1 ) {
+	 	if ( version_compare( $this->get_option( 'version' ), '0.2.0.0', '<' ) ) {
 			// If the plugin was already in use we assume the user added the
 			// select field by hand and hide it.
 			$newopts = $this->defaults();
-			$this->options = array_merge( $this->options , $newopts );
+			$this->options = array_merge( $newopts, $this->options );
 			$this->options['removeselect'] = '1';
-			#var_dump( $this->options );
 			update_option( 'commentavatars', $this->options );
 		}
 	 }
