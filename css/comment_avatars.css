@@ -12,3 +12,6 @@
 #comment-avatars-select-wrapper img.nothing {
 	margin:										4px;
 }
+#comment-avatars-select-wrapper.comment-avatars-deselect-link input {
+	display:									inline;
+}

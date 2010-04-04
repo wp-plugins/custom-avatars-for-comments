@@ -126,7 +126,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		$label = $this->get_option ( 'selectlabel' );
 		if ( !empty( $label ) ) { ?>
 			<div class="comment_avatar_label comment-avatars-select-label">
-				<label for="comment_avatar"><?php echo $label ?></label>
+				<label for="comment-avatars-select-wrapper"><?php echo $label ?></label>
 			</div> <?php
 		} ?>
 
@@ -151,7 +151,8 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		$deselectlink = $this->get_option ( 'deselectlink' );
 		if ( !empty( $deselectlink ) ) { ?>
 			<div class="comment-avatars-deselect-link">
-				<a href="#" onclick="comment_avatars_js_deselect_all(); return false"><?php echo $deselectlink ?></a>
+				<input type="radio" name="comment_avatar" onclick="comment_avatars_js_deselect_all();" /> <?php
+					echo $deselectlink ?>
 			</div> <?php
 		}
 	}
