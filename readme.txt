@@ -11,6 +11,7 @@ Stable tag: 0.2.0.0
 Allows custom avatars for every comment.
 
 == Description ==
+
 This was initially written for a client and he agreed to open-source it. Thanks, John! Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make. Various configuration options are available.
 
 See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on the plugin's home page.
@@ -34,35 +35,36 @@ See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/)
 [Rhyming widget](http://www.rhymebox.de/blog/rhymebox-widget/): I wrote a little online [rhyming dictionary](http://www.rhymebox.com/). This is a widget to search it directly from one of your sidebars.
 
 == Installation ==
+
 1. Unzip
 2. Upload to your plugins directory
 3. Enable the plugin
 4. Upload your own custom avatars to the the wp-content/commentavatars/ directory
 
 == Screenshots ==
+
 1. The modified comment form. See the [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on my blog.
 2. The options page.
 
 == Frequently Asked Questions ==
+
 Q: I have uploaded avatars, there is no error message on the settings page, but I still can't see the avatar selection field<br />
 A: Your theme is most likely broken. Tell your theme developer to read the [Theme Development](http://codex.wordpress.org/Theme_Development) page and to add the comment_form action.
 
-Q: I don't like where the avatar selection field show up on the page.<br />
+Q: I don't like where the avatar selection field shows up on the page.<br />
 A: Perform the following steps:
 1. Find the comments.php file in your theme directory and open it in an editor. Alternatively edit it through the WordPress theme editor under Appearance-Editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
 2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` where the avatar select list should appear.
 3. Check the "Don't show the select field automatically." box on the settings page.
 
-Q: Why can't I see the select box for the custom avatars on my website?<br />
-A: Please read the Installation section.
-
 Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+
 = 0.2.0.0 ( 2010-04-04 ) =
- * The plugin should now work out of the box. If it does not, your theme is broken, please see the FAQ.
- * Add 'select no avatar' link
+ * The plugin should now work without theme modifications. If it does not, your theme is broken, please see the FAQ.
+ * Add a 'select no avatar' link
  * Fix forcing of border color
  * Various optimizations
 = 0.1.2.4 ( 2010-04-03 ) =
