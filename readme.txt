@@ -53,6 +53,7 @@ A: Your theme is most likely broken. Tell your theme developer to read the [Them
 
 Q: I don't like where the avatar selection field shows up on the page.<br />
 A: Perform the following steps:
+
 1. Find the comments.php file in your theme directory and open it in an editor. Alternatively edit it through the WordPress theme editor under Appearance-Editor. If your theme doesn't use a comments.php search for a file with a wp_list_comments call or with the comments form.
 2. Add `<?php global $CommentAvatarsFrontend; if ( isset( $CommentAvatarsFrontend ) ) $CommentAvatarsFrontend->select(); ?>` where the avatar select list should appear.
 3. Check the "Don't show the select field automatically." box on the settings page.
@@ -62,6 +63,8 @@ A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
 
+= 0.2.0.1 ( 2010-04- ) =
+ * Small fix for image URLs
 = 0.2.0.0 ( 2010-04-04 ) =
  * The plugin should now work without theme modifications when installed. If it does not, your theme is broken, please see the FAQ. If you were already using an earlier release of this plugin, the automatic display of the select box will be deactivated. You can change that setting on the options page.
  * Add the option to display a 'select no avatar' button
