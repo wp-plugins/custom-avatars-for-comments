@@ -64,7 +64,7 @@ A: Please read the plugin's settings page, you can disable it there.
 == Changelog ==
 
 = 0.2.1.0 ( 2010-04-05 ) =
- * Add a 'reset plugin' checkbox
+ * Add a 'reset plugin' checkbox, if anybody runs into upgrading problems.
  * Small fix for image URLs
 = 0.2.0.0 ( 2010-04-04 ) =
  * The plugin should now work without theme modifications when installed. If it does not, your theme is broken, please see the FAQ. If you were already using an earlier release of this plugin, the automatic display of the select box will be deactivated. You can change that setting on the options page.
