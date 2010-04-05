@@ -104,7 +104,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 */
 	function init() {
 		if ( ! get_option ( 'commentavatars' ) )
-			add_option ( 'commentavatars' , $this->defaults () );
+			add_option ( 'commentavatars' , $this->defaults() );
 		else
 			$this->check_upgrade();
 	}
@@ -135,6 +135,17 @@ class CommentAvatarsAdmin extends CommentAvatars {
 			$this->options['removeselect'] = '1';
 			update_option( 'commentavatars', $this->options );
 		}
+	 }
+
+	/**
+	 * Reset the plugin config
+	 *
+	 * @return none
+	 * @since 0.2.1.0
+	 */
+	 function restore_defaults() {
+	 	$this->options = $this->defaults();
+		update_option( 'commentavatars', $this->options );
 	 }
 
 	/**
@@ -180,7 +191,9 @@ class CommentAvatarsAdmin extends CommentAvatars {
 	 * @return none
 	 * @since 0.0.2
 	 */
-	function admin_page () { ?>
+	function admin_page () {
+		if ( $this->get_option( 'reset' ) === '1' )
+			$this->restore_defaults(); ?>
 		<div id="nkuttler" class="wrap" >
 			<h2><?php _e( 'Custom Avatars For Comments', 'custom-avatars-for-comments' ) ?></h2> <?php
 			require_once( 'nkuttler.php' );
@@ -309,6 +322,15 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						</th>
 						<td>
 							<input name="commentavatars[showhomelink]" type="checkbox" value="1" <?php checked( '1', $this->options['showhomelink'] ); ?> />
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row"> <?php
+							_e( "Reset the form?", 'custom-avatars-for-comments' )?>
+						</th>
+						<td>
+							<input name="commentavatars[reset]" type="checkbox" value="1" />
 						</td>
 					</tr>
 
