@@ -137,7 +137,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 					echo ' checked="checked" ';
 				echo '/>';
 
-				echo '<img src="' . $this->avatars_url . '/' . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
+				echo '<img src="' . $this->avatars_url . basename( $file ) . '" alt="Custom avatar" onclick="comment_avatars_js(' . $counter . ', this)" class="custom-avatar-for-comment ';
 				if ( $counter === $selected )
 					echo ' selected';
 				echo '"'; 
@@ -167,7 +167,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		if ( isset( $comment_avatar ) && !empty( $comment_avatar ) ) {
 			$file = $this->avatars_dir . $comment_avatar;
 			if ( file_exists( $file ) ) {
-				$r = '<img alt="Custom avatar" src="' . $this->avatars_url . '/' . $comment_avatar . '" class="avatar custom-avatar-for-comment"';
+				$r = '<img alt="Custom avatar" src="' . $this->avatars_url . $comment_avatar . '" class="avatar custom-avatar-for-comment"';
 				if ( !empty( $size ) )
 					$r .= ' width="' . $size .'" height="' . $size . '" ';
 				$r .= '/>';
@@ -175,7 +175,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 			}
 		}
 		elseif ( $this->get_option( 'usedefaultpng' ) == '1' ) {
-			$r = '<img alt="Default avatar" src="' . $this->avatars_url . '/default.png" class="avatar custom-avatar-for-comment"';
+			$r = '<img alt="Default avatar" src="' . $this->avatars_url . 'default.png" class="avatar custom-avatar-for-comment"';
 			if ( !empty( $size ) )
 				$r .= ' width="' . $size .'" height="' . $size . '" ';
 			$r .= '/>';
