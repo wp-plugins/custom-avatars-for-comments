@@ -6,7 +6,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 0.2.1.0
+Stable tag: 0.2.1.1
 
 Allows custom avatars for every comment.
 
@@ -63,6 +63,8 @@ A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
 
+= 0.2.1.1 ( 2010-04-06 ) =
+ * This should fix the upgrade bug reported by [Twinkling82](http://gamingirl.com/) which kept the plugin in a perpetual upgrade loop. Thanks for the report!
 = 0.2.1.0 ( 2010-04-05 ) =
  * Add a 'reset plugin' checkbox, if anybody runs into upgrading problems.
  * Small fix for image URLs

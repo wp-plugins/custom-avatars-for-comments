@@ -133,6 +133,7 @@ class CommentAvatarsAdmin extends CommentAvatars {
 			$newopts = $this->defaults();
 			$this->options = array_merge( $newopts, $this->options );
 			$this->options['removeselect'] = '1';
+			$this->options['version'] = '0.2.0.0'; // upgrade version field...
 			update_option( 'commentavatars', $this->options );
 		}
 	 }
