@@ -2,11 +2,11 @@
 Contributors: nkuttler
 Author URI: http://www.nkuttler.de/
 Plugin URI: http://www.nkuttler.de/wordpress/custom-avatars-for-comments/
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=11041772
+Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 0.2.1.1
+Stable tag: 0.2.1.2
 
 Allows custom avatars for every comment.
 
@@ -17,6 +17,8 @@ This was initially written for a client and he agreed to open-source it. Thanks,
 See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on the plugin's home page.
 
 = My plugins =
+
+[Visitor Movies for WordPress](http://www.nkuttler.de/2010/05/21/record-movies-of-visitors/): Did you ever want to know what your visitors are really doing on your site? Watch them!
 
 [Better tag cloud](http://www.nkuttler.de/wordpress/nktagcloud/): I was pretty unhappy with the default WordPress tag cloud widget. This one is more powerful and offers a list HTML markup that is consistent with most other widgets.
 
@@ -63,6 +65,8 @@ A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
 
+= 0.2.1.2 ( 2010-06-06 ) =
+ * Make the exclude CSS option work
 = 0.2.1.1 ( 2010-04-06 ) =
  * This should fix the upgrade bug reported by [Twinkling82](http://gamingirl.com/) which kept the plugin in a perpetual upgrade loop. Thanks for the report!
 = 0.2.1.0 ( 2010-04-05 ) =

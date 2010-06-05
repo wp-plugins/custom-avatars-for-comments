@@ -58,7 +58,8 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	 */
 	function styles() {
 		wp_register_style( 'comment_avatars_style', WP_PLUGIN_URL . '/custom-avatars-for-comments/css/comment_avatars.css', array(), '0.1.3.0' );
-		wp_enqueue_style( 'comment_avatars_style' );
+		if ( $this->get_option( 'useplugincss' ) )
+			wp_enqueue_style( 'comment_avatars_style' );
 
 		$color = $this->get_option( 'bordercolor' );
 		if ( !empty( $color ) ) { ?>
