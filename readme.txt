@@ -6,7 +6,7 @@ Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 0.2.1.2
+Stable tag: 0.2.2
 
 Allows custom avatars for every comment.
 
@@ -16,25 +16,20 @@ This was initially written for a client and he agreed to open-source it. Thanks,
 
 See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/) on the plugin's home page.
 
-= My plugins =
 
-[Visitor Movies for WordPress](http://www.nkuttler.de/2010/05/21/record-movies-of-visitors/): Did you ever want to know what your visitors are really doing on your site? Watch them!
+= Other plugins I wrote =
 
-[Better tag cloud](http://www.nkuttler.de/wordpress/nktagcloud/): I was pretty unhappy with the default WordPress tag cloud widget. This one is more powerful and offers a list HTML markup that is consistent with most other widgets.
-
-[Theme switch](http://www.nkuttler.de/wordpress/nkthemeswitch/): I like to tweak my main theme that I use on a variety of blogs. If you have ever done this you know how annoying it can be to break things for visitors of your blog. This plugin allows you to use a different theme than the one used for your visitors when you are logged in.
-
-[Zero Conf Mail](http://www.nkuttler.de/wordpress/zero-conf-mail/): Simple mail contact form, the way I like it. No ajax, no bloat. No configuration necessary, but possible.
-
-[Move WordPress comments](http://www.nkuttler.de/wordpress/nkmovecomments/): This plugin adds a small form to every comment on your blog. The form is only added for admins and allows you to [move comments](http://www.nkuttler.de/nkmovecomments/) to a different post/page and to fix comment threading.
-
-[Delete Pending Comments](http://www.nkuttler.de/wordpress/delete-pending-comments): This is a plugin that lets you delete all pending comments at once. Useful for spam victims.
-
-[Snow and more](http://www.nkuttler.de/wordpress/nksnow/): This one lets you see snowflakes, leaves, raindrops, balloons or custom images fall down or float upwards on your blog.
-
-[Fireworks](http://www.nkuttler.de/wordpress/nkfireworks/): The name says it all, see fireworks on your blog!
-
-[Rhyming widget](http://www.rhymebox.de/blog/rhymebox-widget/): I wrote a little online [rhyming dictionary](http://www.rhymebox.com/). This is a widget to search it directly from one of your sidebars.
+ * [Better Lorem Ipsum Generator](http://www.nkuttler.de/wordpress-plugin/wordpress-lorem-ipsum-generator-plugin/)
+ * [Better Related Posts](http://www.nkuttler.de/wordpress-plugin/wordpress-related-posts-plugin/)
+ * [Custom Avatars For Comments](http://www.nkuttler.de/wordpress-plugin/custom-avatars-for-comments/)
+ * [Better Tag Cloud](http://www.nkuttler.de/wordpress-plugin/a-better-tag-cloud-widget/)
+ * [Theme Switch](http://www.nkuttler.de/wordpress-plugin/theme-switch-and-preview-plugin/)
+ * [MU fast backend switch](http://www.nkuttler.de/wordpress-plugin/wpmu-switch-backend/)
+ * [Visitor Movies for WordPress](http://www.nkuttler.de/wordpress-plugin/record-movies-of-visitors/)
+ * [Zero Conf Mail](http://www.nkuttler.de/wordpress-plugin/zero-conf-mail/)
+ * [Move WordPress Comments](http://www.nkuttler.de/wordpress-plugin/move-wordpress-comments/)
+ * [Delete Pending Comments](http://www.nkuttler.de/wordpress-plugin/delete-pending-comments/)
+ * [Snow and more](http://www.nkuttler.de/wordpress-plugin/snow-balloons-and-more/)
 
 == Installation ==
 
@@ -64,7 +59,9 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-
+= 0.2.2 ( 2010-12-09 ) =
+ * Load css + js from correct server
+ * Re-arrange admin page
 = 0.2.1.2 ( 2010-06-06 ) =
  * Make the exclude CSS option work
 = 0.2.1.1 ( 2010-04-06 ) =
