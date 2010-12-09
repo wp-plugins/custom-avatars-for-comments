@@ -6,7 +6,7 @@ Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 
 Allows custom avatars for every comment.
 
@@ -59,7 +59,7 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
-= 0.2.2 ( 2010-12-09 ) =
+= 0.2.3 ( 2010-12-09 ) =
  * Load css + js from correct server
  * Re-arrange admin page
 = 0.2.1.2 ( 2010-06-06 ) =
