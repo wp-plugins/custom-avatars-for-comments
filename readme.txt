@@ -1,7 +1,7 @@
 === Custom Avatars For Comments ===
 Contributors: nkuttler
 Author URI: http://www.nkuttler.de/
-Plugin URI: http://www.nkuttler.de/wordpress/custom-avatars-for-comments/
+Plugin URI: http://www.nkuttler.de/wordpress-plugin/custom-avatars-for-comments/
 Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
