@@ -54,7 +54,7 @@ if ( !function_exists( 'nkuttler0_2_4_links' ) ) {
 				</li>
 			</ul>
 			<div >
-				<iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo $facebook_url; ?>&amp;layout=box_count&amp;show_faces=true&amp; width=450&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="float: left; margin-top: 10px; border:none; overflow:hidden; width:65px; height:65px;" allowTransparency="true"></iframe>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo $facebook_url; ?>&amp;layout=box_count&amp;show_faces=true&amp; width=450&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="float: left; border:none; overflow:hidden; width:65px; height:65px;" allowTransparency="true"></iframe>
 				<a href="<?php echo $profile ?>"><?php _e( 'My other plugins', $plugin ) ?></a><br />
 				<?php _e( '<a href="http://www.nkuttler.de">Translated by Nicolas</a>', $plugin ) ?><br />
 			</div>
