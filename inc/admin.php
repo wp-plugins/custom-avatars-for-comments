@@ -222,6 +222,16 @@ class CommentAvatarsAdmin extends CommentAvatars {
 
 					<tr valign="top">
 						<th scope="row"> <?php
+							_e( "Hide the select avatar field", 'custom-avatars-for-comments' )?>
+						</th>
+						<td>
+							<input name="commentavatars[removeselect]" type="checkbox" value="1" <?php checked( '1', $this->options['removeselect'] ); ?> /> <?php
+							_e( "Use this option if you are placing the select field by hand in your theme.", 'custom-avatars-for-comments' ) ?>
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row"> <?php
 							_e( "Label for the avatar select list", 'custom-avatars-for-comments' ) ?>
 						</th>
 						<td>
@@ -304,16 +314,6 @@ class CommentAvatarsAdmin extends CommentAvatars {
 						<td>
 							<input type="text" name="commentavatars[bordercolor]" value="<?php echo $this->options['bordercolor']; ?>" /> <?php
 							_e( "(e.g. '#ff0000').", 'custom-avatars-for-comments' ) ?>
-						</td>
-					</tr>
-
-					<tr valign="top">
-						<th scope="row"> <?php
-							_e( "Don't show the select field automatically.", 'custom-avatars-for-comments' )?>
-						</th>
-						<td>
-							<input name="commentavatars[removeselect]" type="checkbox" value="1" <?php checked( '1', $this->options['removeselect'] ); ?> /> <?php
-							_e( "Use this option if you are placing the select field by hand in your theme.", 'custom-avatars-for-comments' ) ?>
 						</td>
 					</tr>
 
