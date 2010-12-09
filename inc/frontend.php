@@ -57,7 +57,12 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	 * @since 0.0.2
 	 */
 	function styles() {
-		wp_register_style( 'comment_avatars_style', WP_PLUGIN_URL . '/custom-avatars-for-comments/css/comment_avatars.css', array(), '0.1.3.0' );
+		wp_register_style(
+			'comment_avatars_style',
+			plugins_url( '/custom-avatars-for-comments/css/comment_avatars.css', $this->plugin_file ),
+			array(),
+			'0.1.3.0'
+		);
 		if ( $this->get_option( 'useplugincss' ) )
 			wp_enqueue_style( 'comment_avatars_style' );
 
@@ -80,7 +85,12 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	 * @since 0.0.2
 	 */
 	function scripts() {
-		wp_register_script( 'comment_avatars_js', WP_PLUGIN_URL . '/custom-avatars-for-comments/js/comment_avatars.js', array(), '0.1.3.0' );
+		wp_register_script(
+			'comment_avatars_js',
+			plugins_url( '/js/comment_avatars.js', $this->plugin_file ),
+			array(),
+			'0.1.3.0'
+		);
 		wp_enqueue_script( 'comment_avatars_js' );
 	}
 

@@ -57,6 +57,24 @@ class CommentAvatars {
 	var $avatars_url;
 
 	/**
+	 * Path to the plugin
+	 *
+	 * @since 0.2.2
+	 *
+	 * @var string
+	 */
+	var $plugin_dir;
+
+	/**
+	 * Path to the plugin file
+	 *
+	 * @since 0.2.2
+	 *
+	 * @var string
+	 */
+	var $plugin_file;
+
+	/**
 	 * Load options
 	 *
 	 * @return none
@@ -66,6 +84,8 @@ class CommentAvatars {
 		$this->options = get_option ( 'commentavatars' );
 		$this->avatars_dir = WP_CONTENT_DIR . '/commentavatars/';
 		$this->avatars_url = WP_CONTENT_URL . '/commentavatars/';
+		$this->plugin_file = __FILE__;
+		$this->plugin_dir  = dirname( $this->plugin_file );
 	} 
 
 	/**
