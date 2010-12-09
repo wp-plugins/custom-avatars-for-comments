@@ -198,7 +198,10 @@ class CommentAvatarsAdmin extends CommentAvatars {
 		<div id="nkuttler" class="wrap" >
 			<h2><?php _e( 'Custom Avatars For Comments', 'custom-avatars-for-comments' ) ?></h2> <?php
 			require_once( 'nkuttler.php' );
-			nkuttler0_2_2_links( 'custom-avatars-for-comments' ) ?>
+			nkuttler0_2_4_links(
+				'custom-avatars-for-comments',
+				'http://www.nkuttler.de/wordpress-plugin/custom-avatars-for-comments/'
+			); ?>
 
 			<p> <?php
 				_e( 'With this plugin your visitors can select from a list of custom avatars when they leave a comment.', 'custom-avatars-for-comments' ); ?>
