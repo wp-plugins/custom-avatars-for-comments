@@ -21,7 +21,7 @@ Author: Nicolas Kuttler
 Author URI: http://www.nkuttler.de/
 Plugin URI: http://www.nkuttler.de/wordpress/custom-avatars-for-comments/
 Description: Add the possibility to select a custom avatars for every comment
-Version: 0.2.3
+Version: 0.2.3.1
 Text Domain: custom-avatars-for-comments
 */
 
