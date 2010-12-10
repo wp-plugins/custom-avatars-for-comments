@@ -59,7 +59,7 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	function styles() {
 		wp_register_style(
 			'comment_avatars_style',
-			plugins_url( '/custom-avatars-for-comments/css/comment_avatars.css', $this->plugin_file ),
+			plugins_url( '/css/comment_avatars.css', $this->plugin_file ),
 			array(),
 			'0.1.3.0'
 		);
