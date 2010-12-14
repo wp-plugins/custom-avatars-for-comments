@@ -1,0 +1,170 @@
+# Translation of the WordPress plugin   by .
+# Copyright (C) 2010
+# This file is distributed under the same license as the  package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Avatars For Comments 0.2.3.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-avatars-for-comments\n"
+"POT-Creation-Date: 2010-12-09 20:41+0100\n"
+"PO-Revision-Date: 2010-12-10 22:01+0200\n"
+"Last-Translator: Veselin <veselin@asenov.net>\n"
+"Language-Team: Veselin Asenov <veselin@asenov.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: inc/admin.php:94
+msgid "Pick an avatar:"
+msgstr "Избери аватар:"
+
+#: inc/admin.php:160
+msgid "Comment Avatars"
+msgstr "Аватари за коментари"
+
+#: inc/admin.php:199
+msgid "Custom Avatars For Comments"
+msgstr "Различни аватари във коментарите"
+
+#: inc/admin.php:204
+msgid "With this plugin your visitors can select from a list of custom avatars when they leave a comment."
+msgstr "Със това разширение, вашите посетители могат да избират от лист със различни аватари, когато оставят коментар."
+
+#: inc/admin.php:210
+msgid "No <code>wp-content/commentavatars/</code> directory exists. Please create it and upload some avatars."
+msgstr "Няма папка с името <code>wp-content/commentavatars/</code>. Моля създайте и качете няколко аватара."
+
+#: inc/admin.php:214
+msgid "You can upload additional avatars to <code>wp-content/commentavatars/</code> any time. Please don't delete existing ones, as that will lead to broken image links if they were already used."
+msgstr "Вие може да качите различни аватари във <code>wp-content/commentavatars/</code> по всяко време. Моля не изтривайте сегашните, понеже линковете към изображенията ще се развалят, ако вече са използвани."
+
+#: inc/admin.php:225
+msgid "Hide the select avatar field"
+msgstr "Скрий полето със маркираният аватар"
+
+#: inc/admin.php:229
+msgid "Use this option if you are placing the select field by hand in your theme."
+msgstr "Използвайте тази опция, ако използвате полето на вашата тема."
+
+#: inc/admin.php:235
+msgid "Label for the avatar select list"
+msgstr "Дизайн за вашият списък със аватари"
+
+#: inc/admin.php:244
+msgid "Automatically select first custom avatar?"
+msgstr "Автоматично да избира първият различен аватар?"
+
+#: inc/admin.php:248
+msgid "This will effectively disable gravatars."
+msgstr "Това ще премахне gravatars."
+
+#: inc/admin.php:254
+msgid "Automatically select a random avatar?"
+msgstr "Автоматично да избира произволен аватар?"
+
+#: inc/admin.php:258
+msgid "This will effectively disable gravatars and won't work with caching plugins. If you need that feature please do contact me for professional support."
+msgstr "Така ефективно ще забраните Gravatars и няма да работи с кеширане плъгини. Ако имате нужда от тази функция моля, свържете се с мен за професионална подкрепа."
+
+#: inc/admin.php:264
+msgid "Select no avatar link text:"
+msgstr "Напишете линк за аватар, когато няма:"
+
+#: inc/admin.php:268
+msgid "Useful if you have automatic avatar selection enabled or if visitors change their mind."
+msgstr "Полезно е, ако имате автоматичен аватар избирател или ако посетителите променят решението си."
+
+#: inc/admin.php:274
+msgid "Use a default.png if no custom avatar is selected?"
+msgstr "Използвай default.png, ако не е избран аватар."
+
+#: inc/admin.php:278
+msgid "You'll need to have a default.png file in the avatars directory. This will disable gravatars."
+msgstr "Нужно е да имате файл default.png във папката със аватарите. Това ще забрани gravatars."
+
+#: inc/admin.php:284
+msgid "Hide default.png in the custom avatar select list?"
+msgstr "Скрий default.png във листа с аватари."
+
+#: inc/admin.php:293
+msgid "Use the default CSS styles that come with this plugin?"
+msgstr "Използвай началните CSS стилове, които са със плъгина?"
+
+#: inc/admin.php:302
+msgid "Force custom avatars width and height:"
+msgstr "Оразмерявай автарите със:"
+
+#: inc/admin.php:306
+msgid "This field's value is added as width and height attributes to the avatar &lt;img&gt; tags, e.g. '44px'."
+msgstr "Това поле е за да добавите ширина и височина на аватара &lt;img&gt; tags, e.g. '44px'."
+
+#: inc/admin.php:312
+msgid "Force Custom border color:"
+msgstr "Цвят на рамката:"
+
+#: inc/admin.php:316
+msgid "(e.g. '#ff0000')."
+msgstr "(Пр.'#ff0000')."
+
+#: inc/admin.php:322
+msgid "Show the link to the plugin page in the footer?"
+msgstr "Показване на линкът на плъгина във фуутера ви?"
+
+#: inc/admin.php:331
+msgid "Reset the form?"
+msgstr "Изчистване формата?"
+
+#: inc/admin.php:341
+msgid "Save Changes"
+msgstr "Запази Промените"
+
+#: inc/nkuttler.php:25
+msgid "Do you like this plugin?"
+msgstr "Харесвате ли този плъгин?"
+
+#: inc/nkuttler.php:33
+#, php-format
+msgid "<a href=\"%s\">Rate</a> it"
+msgstr "<a href=\"%s\">Гласувай</a> "
+
+#: inc/nkuttler.php:36
+#, php-format
+msgid "<a href=\"%s\">Visit</a> it's homepage"
+msgstr "<a href=\"%s\">Посети</a>  страницата на плъгина."
+
+#: inc/nkuttler.php:39
+#, php-format
+msgid "<a href=\"%s\">Subscribe</a> the feed"
+msgstr "<a href=\"%s\">Абонирай</a>  се"
+
+#: inc/nkuttler.php:42
+#, php-format
+msgid "<a href=\"%s\">Donate</a>!"
+msgstr "<a href=\"%s\">Дари</a>!"
+
+#: inc/nkuttler.php:45
+msgid "About the author"
+msgstr "За автора"
+
+#: inc/nkuttler.php:48
+#, php-format
+msgid "My <a href=\"%s\">blog</a>"
+msgstr "Моят <a href=\"%s\">Блог</a> "
+
+#: inc/nkuttler.php:51
+#, php-format
+msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
+msgstr "Абонирай се чрез <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
+
+#: inc/nkuttler.php:55
+msgid "My other plugins"
+msgstr "Другите ми плъгини"
+
+#: inc/nkuttler.php:56
+msgid "<a href=\"http://www.nkuttler.de\">Translated by Nicolas</a>"
+msgstr "<a href=\"http://www.asenov.net\">Преведено от Veselin Asenov</a>"
+
