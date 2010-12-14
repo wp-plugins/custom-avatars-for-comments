@@ -5,8 +5,8 @@ Plugin URI: http://www.nkuttler.de/wordpress-plugin/custom-avatars-for-comments/
 Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
-Tested up to: 3.0
-Stable tag: 0.2.3.1
+Tested up to: 3.1
+Stable tag: 0.2.3.2
 
 Allows custom avatars for every comment.
 
@@ -59,6 +59,8 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+= 0.2.3.2 ( 2010-12-12 ) =
+ * Add bulgarian translation and update docs
 = 0.2.3.1 ( 2010-12-10 ) =
  * Fix CSS include bug reported by [E.D. Lindquist](http://www.looseleafstories.com/), thanks!
 = 0.2.3 ( 2010-12-09 ) =
