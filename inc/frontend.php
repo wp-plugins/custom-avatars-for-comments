@@ -47,6 +47,9 @@ class CommentAvatarsFrontend extends CommentAvatars {
 				add_action( 'comment_form', array( &$this, 'select' ), 1 );
 			if ( $this->get_option( 'showhomelink' ) == '1' )
 				add_action( 'wp_footer', array( &$this, 'homelink' ), 8 );
+			// turn off in admin bar
+			add_action( 'admin_bar_menu', array( &$this, 'tmpdisable' ) );
+			add_action( 'wp_after_admin_bar_render', array( &$this, 'tmpenable' ) );
 		}
 	}
 
@@ -215,6 +218,14 @@ class CommentAvatarsFrontend extends CommentAvatars {
 	
 	function add_meta_settings( $post_id ) {
 		add_comment_meta( $post_id, 'comment_avatar', $_POST['comment_avatar'], true );
+	}
+
+	function tmpdisable() {
+		remove_filter( 'get_avatar', array( &$this, 'filter' ) );
+	}
+
+	function tmpenable() {
+		add_filter( 'get_avatar', array( &$this, 'filter' ), 10, 5 );
 	}
 
 }
