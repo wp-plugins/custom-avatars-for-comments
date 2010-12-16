@@ -170,10 +170,22 @@ class CommentAvatarsFrontend extends CommentAvatars {
 		}
 	}
 
-	function display( $avatar, $comment_ID ) {
+	/**
+	 * Display the avatar
+	 *
+	 * @param unknown $avatar
+	 * @param int $comment_ID not used
+	 * @param int $size avatar size
+	 *
+	 * @return avatar markup
+	 */
+	function display( $avatar, $comment_ID, $size ) {
 		$comment_avatar_array = get_comment_meta( $comment_ID, 'comment_avatar' ); 
-		$comment_avatar = $comment_avatar_array[0];
-		$size = $this->get_option( 'size' );
+		$comment_avatar       = $comment_avatar_array[0];
+		$comment_size         = $this->get_option( 'size' );
+		if ( $comment_size ) {
+			$size = intval( $comment_size );
+		}
 
 		if ( isset( $comment_avatar ) && !empty( $comment_avatar ) ) {
 			$file = $this->avatars_dir . $comment_avatar;
@@ -196,9 +208,9 @@ class CommentAvatarsFrontend extends CommentAvatars {
 			return $avatar;
 	}
 	
-	function filter( $avatar ) {
+	function filter( $avatar, $id_or_email, $size ) {
 		global $comment;
-		return $this->display( $avatar, $comment->comment_ID );
+		return $this->display( $avatar, $comment->comment_ID, $size );
 	}
 	
 	function add_meta_settings( $post_id ) {
