@@ -6,7 +6,7 @@ Donate link: http://www.nkuttler.de/wordpress/donations/
 Tags: admin, plugin, comment, comments, avatar, avatars, gravatar, gravatars, i18n, l10n, internationalized, localized
 Requires at least: 2.9
 Tested up to: 3.1
-Stable tag: 0.2.3.2
+Stable tag: 0.3
 
 Allows custom avatars for every comment.
 
@@ -19,17 +19,16 @@ See a [live demo](http://www.nkuttler.de/wordpress/custom-avatars-for-comments/)
 
 = Other plugins I wrote =
 
- * [Better Lorem Ipsum Generator](http://www.nkuttler.de/wordpress-plugin/wordpress-lorem-ipsum-generator-plugin/)
+ * [Snow and more](http://www.nkuttler.de/wordpress-plugin/snow-balloons-and-more/)
+ * [Better Tag Cloud](http://www.nkuttler.de/wordpress-plugin/a-better-tag-cloud-widget/)
+ * [Zero Conf Mail](http://www.nkuttler.de/wordpress-plugin/zero-conf-mail/)
  * [Better Related Posts](http://www.nkuttler.de/wordpress-plugin/wordpress-related-posts-plugin/)
  * [Custom Avatars For Comments](http://www.nkuttler.de/wordpress-plugin/custom-avatars-for-comments/)
- * [Better Tag Cloud](http://www.nkuttler.de/wordpress-plugin/a-better-tag-cloud-widget/)
  * [Theme Switch](http://www.nkuttler.de/wordpress-plugin/theme-switch-and-preview-plugin/)
- * [MU fast backend switch](http://www.nkuttler.de/wordpress-plugin/wpmu-switch-backend/)
  * [Visitor Movies for WordPress](http://www.nkuttler.de/wordpress-plugin/record-movies-of-visitors/)
- * [Zero Conf Mail](http://www.nkuttler.de/wordpress-plugin/zero-conf-mail/)
  * [Move WordPress Comments](http://www.nkuttler.de/wordpress-plugin/move-wordpress-comments/)
  * [Delete Pending Comments](http://www.nkuttler.de/wordpress-plugin/delete-pending-comments/)
- * [Snow and more](http://www.nkuttler.de/wordpress-plugin/snow-balloons-and-more/)
+ * [Better Lorem Ipsum Generator](http://www.nkuttler.de/wordpress-plugin/wordpress-lorem-ipsum-generator-plugin/)
 
 == Installation ==
 
@@ -59,6 +58,9 @@ Q: How do I remove the link to the plugin homepage?<br />
 A: Please read the plugin's settings page, you can disable it there.
 
 == Changelog ==
+= 0.3 ( 2010-12-16 ) =
+ * Fix for the new admin bar in WordPress 3.1
+ * Honor requested avatar sizes
 = 0.2.3.2 ( 2010-12-12 ) =
  * Add bulgarian translation and update docs
 = 0.2.3.1 ( 2010-12-10 ) =
@@ -102,3 +104,8 @@ A: Please read the plugin's settings page, you can disable it there.
  * Development branch
 = 0.0.1 =
  * Unpublished release for my client
+
+== Upgrade notice ==
+= 0.3 ( 2010-12-16 ) =
+ * Fix for the new admin bar in WordPress 3.1
+ * Honor requested avatar sizes
